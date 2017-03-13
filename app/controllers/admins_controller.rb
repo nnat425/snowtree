@@ -11,7 +11,7 @@ class AdminsController < ApplicationController
     @admin = Admin.new(admin_params)
     if @admin.save
       session[:admin_id] = @admin.id
-      redirect_to admins_path(@admin)
+      redirect_to admin_panel_path
     else
       @errors = @admin.errors.full_messages
       render 'new'
