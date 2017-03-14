@@ -1,6 +1,6 @@
 class SessionsController < ApplicationController
 
-  def new
+  def login
   end
 
   def create
@@ -10,7 +10,7 @@ class SessionsController < ApplicationController
       redirect_to admin_panel_path
     else
       @errors = @admin.errors.full_messages
-      render 'new'
+      render 'sessions/login'
     end
   end
 
