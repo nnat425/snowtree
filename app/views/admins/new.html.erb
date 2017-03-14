@@ -1,0 +1,28 @@
+<div>
+  <h2>Register</h2>
+  <% if @errors %>
+    <div>
+      <h4>
+        <%= pluralize(@errors.count, "error") %> prohibited account creation:
+      </h4>
+      <ul>
+        <% @errors.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <%= form_for :admin, url: admins_path do |f| %>
+    <p>
+      <%= f.label :email %>
+      <%= f.email_field :email %>
+    </p>
+    <p>
+      <%= f.label :password %>
+      <%= f.password_field :password %>
+    </p>
+    <p>
+      <%= f.submit %>
+    </p>
+  <% end %>
+</div>
