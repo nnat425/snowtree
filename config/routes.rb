@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  root "static#home"
+  root "static#index"
   get 'admin_panel', to: 'admins#admin_panel'
   get "sessions/login", to: "sessions#login"
 
