@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170314215709) do
+ActiveRecord::Schema.define(version: 20170316014900) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -25,5 +25,16 @@ ActiveRecord::Schema.define(version: 20170314215709) do
   end
 
   add_index "admins", ["perishable_token"], name: "index_admins_on_perishable_token", using: :btree
+
+  create_table "inventories", force: :cascade do |t|
+    t.string   "type"
+    t.string   "material_name"
+    t.integer  "grade_number"
+    t.string   "form"
+    t.string   "color"
+    t.integer  "quantity"
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
+  end
 
 end
