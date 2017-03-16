@@ -3,7 +3,8 @@ class CreateInventory < ActiveRecord::Migration
     create_table :inventories do |t|
       t.string :type
       t.string :material_name
-      t.integer :grade_number
+      t.string :grade_number
+      t.string :area
       t.string :form
       t.string :color
       t.integer :quantity
