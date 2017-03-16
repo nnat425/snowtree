@@ -29,7 +29,8 @@ ActiveRecord::Schema.define(version: 20170316014900) do
   create_table "inventories", force: :cascade do |t|
     t.string   "type"
     t.string   "material_name"
-    t.integer  "grade_number"
+    t.string   "grade_number"
+    t.string   "area"
     t.string   "form"
     t.string   "color"
     t.integer  "quantity"
