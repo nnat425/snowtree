@@ -27,10 +27,9 @@ ActiveRecord::Schema.define(version: 20170316014900) do
   add_index "admins", ["perishable_token"], name: "index_admins_on_perishable_token", using: :btree
 
   create_table "inventories", force: :cascade do |t|
-    t.string   "type"
+    t.string   "content"
     t.string   "material_name"
-    t.string   "grade_number"
-    t.string   "area"
+    t.integer  "grade_number"
     t.string   "form"
     t.string   "color"
     t.integer  "quantity"

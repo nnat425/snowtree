@@ -1,0 +1,49 @@
+<div class="panel-body">
+  <%= form_for(@inventory) do |f| %>
+    <% if @inventory.errors.any? %>
+      <div class = " font " id="error_explanation">
+        <p><%= pluralize(@inventory.errors.count, "error") %> prohibited this inventory from being saved:</p>
+        <ul>
+        <% @inventory.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+        </ul>
+      </div>
+    <% end %>
+
+    <div class="field">
+      <%= f.label :type %>
+      <%= f.text_field :content %>
+    </div>
+
+    <div class="field">
+      <%= f.label :material_name %>
+      <%= f.text_field :material_name %>
+    </div>
+
+    <div class="field">
+      <%= f.label :grade_number %>
+      <%= f.text_field :grade_number %>
+    </div>
+
+    <div class="field">
+      <%= f.label :form %>
+      <%= f.text_field :form %>
+    </div>
+
+    <div class="field">
+      <%= f.label :color %>
+      <%= f.text_field  :color %>
+    </div>
+
+    <div class="field">
+      <%= f.label :quantity %>
+      <%= f.number_field :quantity %>
+    </div>
+
+    <div class="actions">
+      <%= f.submit %>
+    </div>
+
+  <% end %>
+</div>
