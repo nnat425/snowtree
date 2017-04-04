@@ -29,6 +29,6 @@ class InventoriesController < ApplicationController
   private
 
   def inventory_params
-    params.require(:inventory).permit(:content, :material_name, :grade_number, :form, :color, :quantity)
+    params.require(:inventory).permit(:content, :material_name, :grade_number, :form, :color, :quantity, :image)
   end
 end
