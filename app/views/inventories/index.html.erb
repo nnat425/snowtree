@@ -1,0 +1,24 @@
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Material Name</th>
+      <th>Grade Number</th>
+      <th>Form</th>
+      <th>Color</th>
+      <th>Quantity</th>
+    </tr>
+  </thead>
+  <% @inventories.each do |inventory| %>
+  <tbody>
+    <tr>
+      <td><%= inventory.content %></td>
+      <td><%= inventory.material_name %></td>
+      <td><%= inventory.grade_number %></td>
+      <td><%= inventory.form %></td>
+      <td><%= inventory.color %></td>
+      <td><%= inventory.quantity %></td>
+    </tr>
+  </tbody>
+  <%end%>
+</table>
