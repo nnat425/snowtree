@@ -14,8 +14,8 @@ class SessionsController < ApplicationController
     end
   end
 
-  def destory
+  def destroy
     session.clear
-    redirect_to root_path
+    redirect_to 'sessions/login'
   end
 end
