@@ -4,6 +4,8 @@ Rails.application.routes.draw do
   get 'admin_panel', to: 'admins#admin_panel'
   get "sessions/login", to: "sessions#login"
 
+  match '/contacts',     to: 'contacts#new', via: 'get'
+  resources "contacts", only: [:new, :create]
   resources :admins
   # resources :sessions
   resources :inventories
