@@ -29,11 +29,11 @@
         <!-- Collection of nav links and other content for toggling -->
         <div id="navbarCollapse" class="collapse navbar-collapse">
             <ul class="nav navbar-nav navbar-right">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#">Inventory</a></li>
-                <li><a href="#">Buy/Sell Products</a></li>
-                <li><a href="#">Consulting</a></li>
-                <li><a href="#">Transportation</a></li>
+                <li class="active"><%= link_to "Home" , root_path %> </li>
+                <li><%= link_to "Inventory" , inventories_path %></li>
+                <li><%=link_to "Buy/Sell Products", buy_sell_products_path %></li>
+                <li><%=link_to "Consulting", consulting_path %></li>
+                <li><%=link_to "Transportation" , transportation_path %></li>
                 <li><a href="#">Contact Us</a></li>
 
             </ul>

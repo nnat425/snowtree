@@ -1,6 +1,10 @@
 Rails.application.routes.draw do
 
   root "static#index"
+  get "buy-sell-products" => 'static#products'
+  get "consulting" => 'static#consulting'
+  get "transportation" => 'static#transportation'
+
   get 'admin_panel', to: 'admins#admin_panel'
   get "sessions/login", to: "sessions#login"
 
