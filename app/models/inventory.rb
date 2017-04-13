@@ -5,8 +5,6 @@ class Inventory < ApplicationRecord
   validates_presence_of :form
   validates_presence_of :color
   validates_presence_of :quantity
-  validates_presence_of :image
 
-  has_attached_file :image, styles: { medium: "300x300>", thumb: "100x100>",large: "500x500>" }, default_url: "/images/:style/missing.png"
-  validates_attachment_content_type :image, content_type: /\Aimage\/.*\z/
+  has_many :photos
 end

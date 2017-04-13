@@ -17,13 +17,15 @@
   <tbody>
 
     <tr>
-
       <td><%= inventory.content %></td>
       <td><%= inventory.material_name %></td>
       <td><%= inventory.grade_number %></td>
       <td><%= inventory.form %></td>
       <td><%= inventory.color %></td>
       <td><%= inventory.quantity %></td>
+    <% inventory.photos.each do |photo| %>
+      <td><%= image_tag(photo.image.url(:thumb)) %> </td>
+      <% end %>
     </tr>
   </tbody>
   <%end%>
