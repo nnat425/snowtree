@@ -12,7 +12,6 @@ class InventoriesController < ApplicationController
   end
 
   def create
-    #byebug 
     @inventory = Inventory.new(inventory_params)
     if @inventory.save
 
