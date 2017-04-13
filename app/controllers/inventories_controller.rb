@@ -12,8 +12,13 @@ class InventoriesController < ApplicationController
   end
 
   def create
+    #byebug 
     @inventory = Inventory.new(inventory_params)
     if @inventory.save
+
+    if params.has_key?(:photos)
+      params[:photos].each { |photo_object| @inventory.photos.create(image:photo_object)}
+    end 
       redirect_to inventories_path
     else
       @errors = @inventory.errors.full_messages
@@ -29,6 +34,6 @@ class InventoriesController < ApplicationController
   private
 
   def inventory_params
-    params.require(:inventory).permit(:content, :material_name, :grade_number, :form, :color, :quantity, :image)
+    params.require(:inventory).permit(:content, :material_name, :grade_number, :form, :color, :quantity)
   end
 end
