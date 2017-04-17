@@ -1,6 +1,5 @@
 .inventory-index {
   table-layout: auto;
-
 }
 
 #iventory-title {
@@ -9,11 +8,16 @@
   font-family: cursive;
   margin-top: 100px;
   font-weight: bold;
-
+  margin-bottom: 25px;
 }
 
 #inventory-header {
-  background-color: lightgreen;
-  font-size: 14px;
+  background-color: #99E8B7;
+  font-size: 18px;
   font-family: cursive;
+  border-bottom-style: groove;
+}
+
+#inventory-information {
+    background-color: #CDFBDE;
 }
