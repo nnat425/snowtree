@@ -1,7 +1,7 @@
 class InventoriesController < ApplicationController
 
   def index
-    @inventories = Inventory.all
+    @inventories = Inventory.paginate(page: params[:page], per_page: 15)
   end
 
   def new
@@ -17,7 +17,7 @@ class InventoriesController < ApplicationController
 
     if params.has_key?(:photos)
       params[:photos].each { |photo_object| @inventory.photos.create(image:photo_object)}
-    end 
+    end
       redirect_to inventories_path
     else
       @errors = @inventory.errors.full_messages
