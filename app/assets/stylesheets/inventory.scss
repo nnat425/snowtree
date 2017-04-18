@@ -1,5 +1,13 @@
 .inventory-index {
   table-layout: auto;
+  background-color: #CDFFF1;
+  border-style: outset;
+  border-color: #2F833E;
+  display: block;
+  margin-left: 20%;
+// background-color: red;
+
+
 }
 
 #iventory-title {
@@ -15,9 +23,10 @@
   background-color: #99E8B7;
   font-size: 18px;
   font-family: cursive;
-  border-bottom-style: groove;
+  border-style: groove;
 }
 
 #inventory-information {
-    background-color: #CDFBDE;
+  background-color: #E5FAED;
+  border-style:ridge;
 }
