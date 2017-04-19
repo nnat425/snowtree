@@ -16,7 +16,7 @@
 
      <tbody>
      <% @inventories.each do |inventory| %>
-       <tr>
+       <tr id="inventory-information">
          <% if inventory.photos.length > 0 %>
          <td><%= image_tag(inventory.photos.first.image.url(:thumb)) %></td>
          <% end %>
