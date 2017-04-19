@@ -1,35 +1,34 @@
-<!-- <h1 style='margin-top:5em'> Inventory Index Page </h1>
- -->
- <div class="table-responsive">
-<table class="table">
-  <thead>
-    <tr>
-      <th>Image</th>
-      <th>Type</th>
-      <th>Material Name</th>
-      <th>Grade Number</th>
-      <th>Form</th>
-      <th>Color</th>
-      <th>Quantity</th>
-    </tr>
-  </thead>
-      
-  <tbody>
-  <% @inventories.each do |inventory| %>
+<div class="container">
+  <h1 id="iventory-title" > Inventory </h1>
+   <div class="table-responsive">
+   <table class="table">
+     <thead>
+       <tr>
+         <th>Image</th>
+         <th>Type</th>
+         <th>Material Name</th>
+         <th>Grade Number</th>
+         <th>Form</th>
+         <th>Color</th>
+         <th>Quantity</th>
+       </tr>
+     </thead>
 
-    <tr>
-      
-      <% if inventory.photos.length > 0 %>
-      <td><%= image_tag(inventory.photos.first.image.url(:thumb)) %></td>
-      <% end %>
-      <td><%= inventory.content %></td>
-      <td><%= inventory.material_name %></td>
-      <td><%= inventory.grade_number %></td>
-      <td><%= inventory.form %></td>
-      <td><%= inventory.color %></td>
-      <td><%= inventory.quantity %></td>
-    </tr>
-  </tbody>
-  <%end%>
-</table>
+     <tbody>
+     <% @inventories.each do |inventory| %>
+       <tr>
+         <% if inventory.photos.length > 0 %>
+         <td><%= image_tag(inventory.photos.first.image.url(:thumb)) %></td>
+         <% end %>
+         <td><%= inventory.content %></td>
+         <td><%= inventory.material_name %></td>
+         <td><%= inventory.grade_number %></td>
+         <td><%= inventory.form %></td>
+         <td><%= inventory.color %></td>
+         <td><%= inventory.quantity %></td>
+       </tr>
+     </tbody>
+     <%end%>
+   </table>
+ </div>
 </div>
