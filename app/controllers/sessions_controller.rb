@@ -10,12 +10,12 @@ class SessionsController < ApplicationController
       redirect_to admin_panel_path
     else
       @errors = @admin.errors.full_messages
-      render 'sessions/login'
+      render 'login'
     end
   end
 
   def destroy
     session.clear
-    redirect_to 'sessions/login'
+    redirect_to root_path
   end
 end
