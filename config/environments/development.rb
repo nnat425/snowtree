@@ -10,13 +10,24 @@ Rails.application.configure do
 
   config.action_mailer.delivery_method = :smtp
 # SMTP settings for gmail
+  # config.action_mailer.smtp_settings = {
+  #  :address              => "smtp.gmail.com",
+  #  :port                 => 587,
+  #  :user_name            => "snowtree.testing@gmail.com",
+  #  :password             => "helloworld",
+  #  :authentication       => "plain",
+  # }
+
+
+  config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
-   :address              => "smtp.gmail.com",
-   :port                 => 587,
-   :user_name            => "snowtree.testing@gmail.com",
-   :password             => "helloworld",
-   :authentication       => "plain",
-  }
+  :authentication => :plain,
+  :address => "smtp.mailgun.org",
+  :port => 587,
+  :domain => "sandbox3e74fbd758c54c6b9f64be31227d2ac7.mailgun.org",
+  :user_name => "postmaster@sandbox3e74fbd758c54c6b9f64be31227d2ac7.mailgun.org",
+  :password => "9663ceab80f8a027c71f639eb17c24b0"
+}
   # Do not eager load code on boot.
   config.eager_load = false
 
