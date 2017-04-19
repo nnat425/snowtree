@@ -1,7 +1,7 @@
 <div class="container inventory-index">
   <h1 class="page-header" id="iventory-title"> Inventory </h1>
    <div class="table-responsive">
-   <table class="table table-bordered">
+    <table class="table table-bordered">
      <thead id= "inventory-header">
        <tr>
          <th>Image</th>
@@ -13,25 +13,24 @@
          <th>Quantity</th>
        </tr>
      </thead>
-
      <tbody>
-     <% @inventories.each do |inventory| %>
-       <tr id="inventory-information">
-         <% if inventory.photos.length > 0 %>
-         <td><%= image_tag(inventory.photos.first.image.url(:thumb)) %></td>
-         <% end %>
-         <td><%= inventory.content %></td>
-         <td><%= inventory.material_name %></td>
-         <td><%= inventory.grade_number %></td>
-         <td><%= inventory.form %></td>
-         <td><%= inventory.color %></td>
-         <td><%= inventory.quantity %></td>
-       </tr>
-     </tbody>
-     <%end%>
+       <% @inventories.each do |inventory| %>
+         <tr id="inventory-information">
+           <% if inventory.photos.length > 0 %>
+           <td><%= image_tag(inventory.photos.first.image.url(:thumb)) %></td>
+           <% end %>
+           <td><%= inventory.content %></td>
+           <td><%= inventory.material_name %></td>
+           <td><%= inventory.grade_number %></td>
+           <td><%= inventory.form %></td>
+           <td><%= inventory.color %></td>
+           <td><%= inventory.quantity %></td>
+         </tr>
+       </tbody>
+       <%end%>
    </table>
    <div class="pagination">
-       <%= will_paginate renderer: BootstrapPagination::Rails %>
+      <%= will_paginate renderer: BootstrapPagination::Rails %>
    </div>
  </div>
 </div>
