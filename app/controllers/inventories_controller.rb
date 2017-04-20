@@ -27,6 +27,7 @@ class InventoriesController < ApplicationController
 
   def edit 
   @inventory = Inventory.find(params[:id])
+  @photos = @inventory.photos
   end
 
   def update
