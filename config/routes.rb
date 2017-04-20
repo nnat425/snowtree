@@ -19,7 +19,7 @@ Rails.application.routes.draw do
   resources :admins
   resources :sessions
   resources :inventories
-  delete 'inventories/:id' => 'inventories#destroy'
+
   resources :photos
   delete 'logout', to: 'sessions#destroy'
   resources :password_resets, only: [ :new, :create]
