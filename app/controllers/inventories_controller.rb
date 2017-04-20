@@ -25,6 +25,20 @@ class InventoriesController < ApplicationController
     end
   end
 
+  def edit 
+  @inventory = Inventory.find(param[:id])
+  end
+
+  def update
+  inventory = Inventory.find(params[:id])
+  if inventory.update_attributes(inventory_params)
+    flash[:notice] = 'Inventory was successfully updated.'
+    redirect_to inventories_path
+  else
+    render "edit"
+  end 
+end 
+
   def destroy
     @inventory = Inventory.find(params[:id])
     @inventory.destroy
