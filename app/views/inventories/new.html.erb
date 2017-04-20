@@ -31,14 +31,14 @@
         e.preventDefault();
         $(this).after("<div id='parent-photo'><button  class='remove-file-option'>X</button><input type='file' name='photos[]' id='photos_' multiple='multiple'><div id='target'></div</div><br>");
 
-      
+
           $('.remove-file-option').on('click',function(e){
             e.preventDefault();
             $(this).parent().remove();
 
           })
 
-          $('#parent-photo' ).on('change', '#photos_', function(event) {      
+          $('#parent-photo' ).on('change', '#photos_', function(event) {
             var target_element = $(this).next();
 
             var files = event.target.files;
@@ -79,7 +79,7 @@
 
  </script>
  <div class="field">
-  <%= f.label :content %>
+  <%= f.label :type %>
   <%= f.text_field :content %>
 </div>
 

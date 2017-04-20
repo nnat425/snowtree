@@ -4,22 +4,22 @@ def index
 end
 
 def products
-end 
+end
 
 def product_data_collect
 	product_data = params[:products]
 	ProductsMailer.sell_buy_product_data(product_data).deliver_now
 	redirect_to thanks_path
-end 
+end
 
 def consulting
-end 
+end
 
-def transportation 
-end 
+def transportation
+end
 
 def thanks_for_email
-end 
+end
 
 
 

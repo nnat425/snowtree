@@ -17,7 +17,7 @@ Rails.application.routes.draw do
   match '/contacts',     to: 'contacts#new', via: 'get'
   resources "contacts", only: [:new, :create]
   resources :admins
-  # resources :sessions
+  resources :sessions
   resources :inventories
   resources :photos
   delete 'logout', to: 'sessions#destroy'
