@@ -6,5 +6,5 @@ class Inventory < ApplicationRecord
   validates_presence_of :color
   validates_presence_of :quantity
 
-  has_many :photos
+  has_many :photos, dependent: :destroy
 end

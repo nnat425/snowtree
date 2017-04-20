@@ -4,6 +4,8 @@
     <table class="table table-bordered">
      <thead id= "inventory-header">
        <tr>
+         <th>Edit</th>
+         <th>Delete</th>
          <th>Image</th>
          <th>Type</th>
          <th>Material Name</th>
@@ -16,6 +18,8 @@
      <tbody>
        <% @inventories.each do |inventory| %>
          <tr id="inventory-information">
+            <td> Edit </td>
+            <td> <%= link_to 'Destroy',  post,  method: :delete, data: { confirm: 'Are you sure?' } %></td>
            <% if inventory.photos.length > 0 %>
            <td> <%= link_to image_tag(inventory.photos.first.image.url(:thumb)),inventory %></td>
            <% end %>
