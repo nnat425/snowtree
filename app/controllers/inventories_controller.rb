@@ -26,7 +26,7 @@ class InventoriesController < ApplicationController
   end
 
   def edit 
-  @inventory = Inventory.find(param[:id])
+  @inventory = Inventory.find(params[:id])
   end
 
   def update
