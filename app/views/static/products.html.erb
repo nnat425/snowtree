@@ -1,141 +1,118 @@
-<style>
-#product-div{
-	margin-top:.75em;
-}
-</style>
-
-<h1 style='margin-top:5em'>Buy/Sell Products</h1>
-
-<div class='row'>
-<div class='col-md-5 col-md-offset-5'>
-		<%= form_for :products, url: "product_data_collect" do |form| %>
-
-		<div id='product-div' class='row'>
-			<div class='col-md-3'>
-				What you want to do: 
+<div class="container">
+	<h1>Buy/Sell Products</h1>
+	<div class='row'>
+	<div class='col-md-5 col-md-offset-5'>
+			<%= form_for :products, url: "product_data_collect" do |form| %>
+			<div id='product-div' class='row'>
+				<div class='col-md-3'>
+					What you want to do:
+				</div>
+				<div class="col-md-4">
+					<%= form.select :product_action, {Buy: "buy", Sell: "sell"} %>
+				</div>
 			</div>
-			<div class="col-md-4">
-				<%= form.select :product_action, {Buy: "buy", Sell: "sell"} %>
+			<div id='product-div' class='row'>
+				<div class='col-md-2'>
+					Company:
+				</div>
+				<div class="col-md-4">
+					<%= form.text_field :company_name, placeholder: "Company Name" %>
+				</div>
 			</div>
+			<div id='product-div' class='row'>
+				<div class='col-md-2'>
+					Name:
+				</div>
+				<div class="col-md-4">
+					<%= form.text_field :name, placeholder: "Name" %>
+				</div>
+			</div>
+			<div id='product-div' class='row'>
+				<div class='col-md-2'>
+					Phone Number:
+				</div>
+				<div class="col-md-4">
+					<%= form.text_field :phone_number, placeholder: "Phone Number" %>
+				</div>
+			</div>
+			<div id='product-div' class='row'>
+				<div class='col-md-2'>
+					Email:
+				</div>
+				<div class="col-md-4">
+					<%= form.text_field :email, placeholder: "Email" %>
+				</div>
+			</div>
+			<div id='product-div' class='row'>
+				<div class='col-md-2'>
+					Plastic Material:
+				</div>
+				<div class="col-md-4">
+					<%= form.text_field :plastic_material, placeholder: "Plastic Material" %>
+				</div>
+			</div>
+			<div id='product-div' class='row'>
+				<div class='col-md-2'>
+					Plastic Form:
+				</div>
+				<div class="col-md-4">
+					<%= form.text_field :plastic_form, placeholder: "Plastic Form" %>
+				</div>
+			</div>
+			<div id='product-div' class='row'>
+				<div class='col-md-2'>
+					Quantity:
+				</div>
+				<div class="col-md-4">
+					<%= form.text_field :quantity, placeholder: "Quantity" %>
+				</div>
+			</div>
+			<div id='product-div' class='row'>
+				<div class='col-md-2'>
+					Price Range:
+				</div>
+				<div class="col-md-4">
+					<%= form.text_field :price_range, placeholder: "Price Range" %>
+				</div>
+			</div>
+			<div id='product-div' class='row'>
+				<div class='col-md-2'>
+					Color:
+				</div>
+				<div class="col-md-4">
+					<%= form.text_field :color, placeholder: "Color" %>
+				</div>
+			</div>
+			<div id='product-div' class='row'>
+				<div class='col-md-2'>
+					FOB Point:
+				</div>
+				<div class="col-md-4">
+					<%= form.text_field :fob_point, placeholder: "FOB Point" %>
+				</div>
+			</div>
+			<div id='product-div' class='row'>
+				<div class='col-md-2'>
+					Date Needed:
+				</div>
+				<div class="col-md-4">
+					<%= form.text_field :date_needed, placeholder: "Date Needed" %>
+				</div>
+			</div>
+			<div id='product-div' class='row'>
+				<div class='col-md-2'>
+					Comments:
+				</div>
+				<div class="col-md-4">
+					<%= form.text_field :comments, placeholder: "Comments" %>
+				</div>
+			</div>
+			<div id='product-div' class='row'>
+				<div class='col-md-2'>
+					<%= form.submit %>
+				</div>
+			</div>
+			<% end %>
 		</div>
-
-		<div id='product-div' class='row'>
-			<div class='col-md-2'>
-				Company: 
-			</div>
-			<div class="col-md-4">
-				<%= form.text_field :company_name, placeholder: "Company Name" %>
-			</div>
-		</div>
-
-		<div id='product-div' class='row'>
-			<div class='col-md-2'>
-				Name: 
-			</div>
-			<div class="col-md-4">
-				<%= form.text_field :name, placeholder: "Name" %>
-			</div>
-		</div>
-
-		<div id='product-div' class='row'>
-			<div class='col-md-2'>
-				Phone Number: 
-			</div>
-			<div class="col-md-4">
-				<%= form.text_field :phone_number, placeholder: "Phone Number" %>
-			</div>
-		</div>
-
-		<div id='product-div' class='row'>
-			<div class='col-md-2'>
-				Email: 
-			</div>
-			<div class="col-md-4">
-				<%= form.text_field :email, placeholder: "Email" %>
-			</div>
-		</div>
-
-		<div id='product-div' class='row'>
-			<div class='col-md-2'>
-				Plastic Material: 
-			</div>
-			<div class="col-md-4">
-				<%= form.text_field :plastic_material, placeholder: "Plastic Material" %>
-			</div>
-		</div>
-
-		<div id='product-div' class='row'>
-			<div class='col-md-2'>
-				Plastic Form: 
-			</div>
-			<div class="col-md-4">
-				<%= form.text_field :plastic_form, placeholder: "Plastic Form" %>
-			</div>
-		</div>
-
-		<div id='product-div' class='row'>
-			<div class='col-md-2'>
-				Quantity: 
-			</div>
-			<div class="col-md-4">
-				<%= form.text_field :quantity, placeholder: "Quantity" %>
-			</div>
-		</div>
-
-		<div id='product-div' class='row'>
-			<div class='col-md-2'>
-				Price Range: 
-			</div>
-			<div class="col-md-4">
-				<%= form.text_field :price_range, placeholder: "Price Range" %>
-			</div>
-		</div>
-
-		<div id='product-div' class='row'>
-			<div class='col-md-2'>
-				Color: 
-			</div>
-			<div class="col-md-4">
-				<%= form.text_field :color, placeholder: "Color" %>
-			</div>
-		</div>
-
-		<div id='product-div' class='row'>
-			<div class='col-md-2'>
-				FOB Point: 
-			</div>
-			<div class="col-md-4">
-				<%= form.text_field :fob_point, placeholder: "FOB Point" %>
-			</div>
-		</div>
-
-		<div id='product-div' class='row'>
-			<div class='col-md-2'>
-				Date Needed: 
-			</div>
-			<div class="col-md-4">
-				<%= form.text_field :date_needed, placeholder: "Date Needed" %>
-			</div>
-		</div>
-
-		<div id='product-div' class='row'>
-			<div class='col-md-2'>
-				Comments: 
-			</div>
-			<div class="col-md-4">
-				<%= form.text_field :comments, placeholder: "Comments" %>
-			</div>
-		</div>
-
-
-
-		<div id='product-div' class='row'>
-			<div class='col-md-2'>
-				<%= form.submit %>
-			</div>
-		</div>
-
-		<% end %>
-
 	</div>
 </div>
