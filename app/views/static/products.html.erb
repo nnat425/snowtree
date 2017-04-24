@@ -1,8 +1,7 @@
 <div class="container product-background">
-	<h1 class= "products-title">Buy/Sell Products</h1>
 	<div class="form-horizontal" id="product-form" >
 		<%= form_for :products, url: "product_data_collect" do |f| %>
-
+		<h1 class= "products-title">Buy/Sell Products</h1>
 			<%= f.label "What you want to do:" %>
 			<%= f.select :product_action, {Buy: "buy", Sell: "sell"} %>
 
@@ -43,7 +42,6 @@
 		 	<%= f.text_field :comments,:class => 'sub-form',  placeholder: "Comments" %>
 
 	 		<button id="singlebutton" name="singlebutton" class="btn btn-primary"> Submit</button>
-
 	<% end %>
 	</div>
 </div>

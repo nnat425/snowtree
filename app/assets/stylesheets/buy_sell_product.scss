@@ -2,10 +2,20 @@
   font-size: 44px;
   color: green;
   font-family: cursive;
-  margin-top: 50px;
+  margin-top: 100px;
   font-weight: bold;
+  margin-bottom: 25px;
   border-bottom-style: solid;
   border-color: #55A563;
+}
+
+.product-background {
+  background-color: #F5FFF7 ;
+  margin-bottom: 15px;
+  margin-top: 80px;
+  border-style: outset;
+  border-color: #2F833E;
+  // display: inline-block;
 }
 
 #product-form {
@@ -18,20 +28,13 @@
   // border-color: #55A563;
   font-size: 15px;
 
-}
 
-.product-background {
-  background-color: #F5FFF7 ;
-  margin-bottom: 15px;
-  margin-top: 80px;
-  border-style: outset;
-  border-color: #2F833E;
 }
 
 .sub-form {
   // font-size: 20
   border-style: outset;
   border-radius: 10px;
-  width: 300px;
+  width: 200px;
   // height: 50px;
 }
