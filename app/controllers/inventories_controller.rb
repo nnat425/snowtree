@@ -34,10 +34,10 @@ class InventoriesController < ApplicationController
     inventory = Inventory.find(params[:id])
     if inventory.update_attributes(inventory_params)
         params[:photos].each  do |photo_object| 
-        photo_id = photo_object[0].to_i
+        photo_id = photo_object[0]
         photo_to_update = Photo.find(photo_id)
-        if params[:photos][photo_id.to_s][:image] != ""
-          photo_to_update.update_attributes(image: params[:photos][photo_id.to_s][:image])
+        if params[:photos][photo_id][:image] != ""
+          photo_to_update.update_attributes(image: params[:photos][photo_id][:image])
         end
       end
       flash[:notice] = 'Inventory was successfully updated.'
