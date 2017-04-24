@@ -15,9 +15,9 @@ class InventoriesController < ApplicationController
     @inventory = Inventory.new(inventory_params)
     if @inventory.save
 
-    if params.has_key?(:photos)
-      params[:photos].each { |photo_object| @inventory.photos.create(image:photo_object)}
-    end
+      if params.has_key?(:photos)
+        params[:photos].each { |photo_object| @inventory.photos.create(image:photo_object)}
+      end
       redirect_to inventories_path
     else
       @errors = @inventory.errors.full_messages
@@ -26,19 +26,30 @@ class InventoriesController < ApplicationController
   end
 
   def edit 
-  @inventory = Inventory.find(params[:id])
-  @photos = @inventory.photos
+    @inventory = Inventory.find(params[:id])
+    @photos = @inventory.photos
   end
 
   def update
-  inventory = Inventory.find(params[:id])
-  if inventory.update_attributes(inventory_params)
-    flash[:notice] = 'Inventory was successfully updated.'
-    redirect_to inventories_path
-  else
-    render "edit"
+   # byebug
+    inventory = Inventory.find(params[:id])
+    #photos = inventory.photos
+    if inventory.update_attributes(inventory_params)
+        params[:photos].each  do |photo_object| 
+        photo_id = photo_object[0].to_i
+        photo_to_update = Photo.find(photo_id)
+        if params[:photos][photo_id.to_s][:image] != ""
+          photo_to_update.update_attribute(image: params[:photos][photo_id.to_s][:image])
+        end
+      end
+      flash[:notice] = 'Inventory was successfully updated.'
+      redirect_to inventories_path
+    else
+      render "edit"
+    end 
   end 
-end 
+
+  #If param
 
   def destroy
     @inventory = Inventory.find(params[:id])

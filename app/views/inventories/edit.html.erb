@@ -1,39 +1,49 @@
 <div style='margin-top:5em'>
-<%= form_for @inventory, :value => @inventory do |f| %>
+	<%= form_for @inventory, :value => @inventory do |f| %>
 
-<div class="field">
-  <%= f.label :type %>
-  <%= f.text_field :content  %>
-</div>
 
-<div class="field">
-  <%= f.label :material_name %>
-  <%= f.text_field :material_name %>
-</div>
 
-<div class="field">
-  <%= f.label :grade_number %>
-  <%= f.text_field :grade_number %>
-</div>
+	<% @photos.each do |photo| %>
+	 <%= image_tag(photo.image.url(:thumb)) %>
+	<%= fields_for "photos[]", photo do |pf| %>
+	<%= pf.file_field(:image) %>
 
-<div class="field">
-  <%= f.label :form %>
-  <%= f.text_field :form %>
-</div>
+	<% end %>
+	<% end %>
 
-<div class="field">
-  <%= f.label :color %>
-  <%= f.text_field  :color %>
-</div>
 
-<div class="field">
-  <%= f.label :quantity %>
-  <%= f.number_field :quantity %>
-</div>
+	<div class="field">
+		<%= f.label :type %>
+		<%= f.text_field :content  %>
+	</div>
 
-<div class="actions">
-  <%= f.submit %>
-</div>
+	<div class="field">
+		<%= f.label :material_name %>
+		<%= f.text_field :material_name %>
+	</div>
 
-<% end %>
+	<div class="field">
+		<%= f.label :grade_number %>
+		<%= f.text_field :grade_number %>
+	</div>
+
+	<div class="field">
+		<%= f.label :form %>
+		<%= f.text_field :form %>
+	</div>
+
+	<div class="field">
+		<%= f.label :color %>
+		<%= f.text_field  :color %>
+	</div>
+
+	<div class="field">
+		<%= f.label :quantity %>
+		<%= f.number_field :quantity %>
+	</div>
+
+	<div class="actions">
+		<%= f.submit %>
+	</div>>
+	<% end %>
 </div>
