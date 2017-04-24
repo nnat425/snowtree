@@ -3,46 +3,46 @@
 	<div id="product-form" >
 		<%= form_for :products, url: "product_data_collect" do |f| %>
 
-			  <%= f.label "What you want to do:" %>
-				<%= f.select :product_action, {Buy: "buy", Sell: "sell"} %>
+			<%= f.label "What you want to do:" %>
+			<%= f.select :product_action, {Buy: "buy", Sell: "sell"} %>
 
-			  <%= f.label "Company" %>
-			  <%= f.text_field :company_name , placeholder: "Company Name" %>
+		  <%= f.label "Company" %>
+		  <%= f.text_field :company_name , placeholder: "Company Name" %>
 
-			  <%= f.label "Name" %>
-			  <%= f.text_field :name, placeholder: "Name" %>
+		  <%= f.label "Name" %>
+		  <%= f.text_field :name, placeholder: "Name" %>
 
-			  <%= f.label "Phone Number" %>
-			  <%= f.text_field :phone_number , placeholder: "Phone Number"%>
+		  <%= f.label "Phone Number" %>
+		  <%= f.text_field :phone_number , placeholder: "Phone Number"%>
 
-			  <%= f.label "Email" %>
-			  <%= f.text_field :email, placeholder: "Email" %>
+		  <%= f.label "Email" %>
+		  <%= f.text_field :email, placeholder: "Email" %>
 
-			  <%= f.label "Plastic Material" %>
-			  <%= f.text_field :plastic_material, placeholder: "Plastic Material"%>
+		  <%= f.label "Plastic Material" %>
+		  <%= f.text_field :plastic_material, placeholder: "Plastic Material"%>
 
-			  <%= f.label "Plastic Form" %>
-			  <%= f.text_field :plastic_form, placeholder: "Plastic Form"  %>
+		  <%= f.label "Plastic Form" %>
+		  <%= f.text_field :plastic_form, placeholder: "Plastic Form"  %>
 
-				<%= f.label "Quantity" %>
-			 <%= f.text_field :quantity, placeholder: "Quantity" %>
+			<%= f.label "Quantity" %>
+		 <%= f.text_field :quantity, placeholder: "Quantity" %>
 
-			 <%= f.label "Price Range" %>
-			 <%= f.text_field :price_range, placeholder: "Price Range" %>
+		 <%= f.label "Price Range" %>
+		 <%= f.text_field :price_range, placeholder: "Price Range" %>
 
-			 <%= f.label "Color" %>
-			 <%= f.text_field :color, placeholder: "Color" %>
+		 <%= f.label "Color" %>
+		 <%= f.text_field :color, placeholder: "Color" %>
 
-			 <%= f.label "FOB Point" %>
-			 <%= f.text_field :fob_point, placeholder: "FOB Point"  %>
+		 <%= f.label "FOB Point" %>
+		 <%= f.text_field :fob_point, placeholder: "FOB Point"  %>
 
-			 <%= f.label "Date Needed" %>
-			 <%= f.text_field :date_needed, placeholder: "Date Needed"  %>
+		 <%= f.label "Date Needed" %>
+		 <%= f.text_field :date_needed, placeholder: "Date Needed"  %>
 
-			 <%= f.label "Comments" %>
-			 <%= f.text_field :comments, placeholder: "Comments" %>
+		 <%= f.label "Comments" %>
+		 <%= f.text_field :comments, placeholder: "Comments" %>
 
-				<%= f.submit "Submit" %>
-		<% end %>
+	 	<button id="singlebutton" name="singlebutton" class="btn btn-primary"> Submit</button>
+	<% end %>
 	</div>
 </div>
