@@ -1,7 +1,7 @@
 <div class="container product-background">
 	<div class="form-horizontal" id="product-form" >
 		<%= form_for :products, url: "product_data_collect" do |f| %>
-		<h1 class= "products-title">Buy/Sell Products</h1>
+		<h1 class= "products-title">Buy / Sell Products</h1>
 			<%= f.label "What you want to do:" %>
 			<%= f.select :product_action, {Buy: "buy", Sell: "sell"} %>
 
