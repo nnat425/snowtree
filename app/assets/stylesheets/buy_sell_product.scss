@@ -2,39 +2,38 @@
   font-size: 44px;
   color: green;
   font-family: cursive;
-  margin-top: 100px;
   font-weight: bold;
   margin-bottom: 25px;
   border-bottom-style: solid;
   border-color: #55A563;
+  text-shadow: 1px 1px grey;
+
 }
 
 .product-background {
-  background-color: #F5FFF7 ;
-  margin-bottom: 15px;
+  background-color: #F9FFFA ;
+  margin-bottom: 60px;
   margin-top: 80px;
   border-style: outset;
   border-color: #2F833E;
-  // display: inline-block;
+  border-radius: 2em;
+  box-shadow: 10px 10px 10px #888888;
+
 }
 
 #product-form {
-  // margin-left: 50px;
   white-space: pre-line;
   color: darkgreen;
-  font-family: cursive;
-  // font-weight: bold;
+  font-family: serif;
   margin-bottom: 25px;
-  // border-color: #55A563;
   font-size: 15px;
-
-
+  padding: 20px;
+  text-align: center;
 }
 
 .sub-form {
-  // font-size: 20
   border-style: outset;
   border-radius: 10px;
-  width: 200px;
-  // height: 50px;
+  width: 150px;
+
 }
