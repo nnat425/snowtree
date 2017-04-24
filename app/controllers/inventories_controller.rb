@@ -31,15 +31,13 @@ class InventoriesController < ApplicationController
   end
 
   def update
-   # byebug
     inventory = Inventory.find(params[:id])
-    #photos = inventory.photos
     if inventory.update_attributes(inventory_params)
         params[:photos].each  do |photo_object| 
         photo_id = photo_object[0].to_i
         photo_to_update = Photo.find(photo_id)
         if params[:photos][photo_id.to_s][:image] != ""
-          photo_to_update.update_attribute(image: params[:photos][photo_id.to_s][:image])
+          photo_to_update.update_attributes(image: params[:photos][photo_id.to_s][:image])
         end
       end
       flash[:notice] = 'Inventory was successfully updated.'

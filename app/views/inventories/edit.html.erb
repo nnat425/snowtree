@@ -1,14 +1,13 @@
 <div style='margin-top:5em'>
-	<%= form_for @inventory, :value => @inventory do |f| %>
+	<%= form_for @inventory, :value => @inventory, html: {multipart: true} do |f| %>
 
 
 
 	<% @photos.each do |photo| %>
 	 <%= image_tag(photo.image.url(:thumb)) %>
-	<%= fields_for "photos[]", photo do |pf| %>
-	<%= pf.file_field(:image) %>
-
-	<% end %>
+	<%= fields_for "photos[]", photo  do |pf| %>
+	<%= pf.file_field(:image)  %>
+		<% end %>
 	<% end %>
 
 

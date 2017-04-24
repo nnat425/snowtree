@@ -30,6 +30,7 @@ gem 'will_paginate-bootstrap'
 
 gem 'bootstrap-sass', '~> 3.3.6'
 
+gem 'pry'
 
 source 'https://rails-assets.org' do
   gem 'rails-assets-tether', '>= 1.3.3'
