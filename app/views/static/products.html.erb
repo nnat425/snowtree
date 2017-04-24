@@ -1,48 +1,76 @@
 <div class="container product-background">
 	<h1 class= "products-title">Buy/Sell Products</h1>
-	<div id="product-form" >
+	<div class="form-horizontal" id="product-form" >
 		<%= form_for :products, url: "product_data_collect" do |f| %>
 
+		<div class="">
 			<%= f.label "What you want to do:" %>
 			<%= f.select :product_action, {Buy: "buy", Sell: "sell"} %>
+		</div>
 
+		<div class="">
 		  <%= f.label "Company" %>
 		  <%= f.text_field :company_name , placeholder: "Company Name" %>
+		</div>
 
+		<div class="">
 		  <%= f.label "Name" %>
 		  <%= f.text_field :name, placeholder: "Name" %>
+		</div>
 
+		<div class="">
 		  <%= f.label "Phone Number" %>
 		  <%= f.text_field :phone_number , placeholder: "Phone Number"%>
+		</div>
 
+		<div class="">
 		  <%= f.label "Email" %>
 		  <%= f.text_field :email, placeholder: "Email" %>
+		</div>
 
+		<div class="">
 		  <%= f.label "Plastic Material" %>
 		  <%= f.text_field :plastic_material, placeholder: "Plastic Material"%>
+		</div>
 
+		<div class="">
 		  <%= f.label "Plastic Form" %>
 		  <%= f.text_field :plastic_form, placeholder: "Plastic Form"  %>
+		</div>
 
+		<div class="">
 			<%= f.label "Quantity" %>
-		 <%= f.text_field :quantity, placeholder: "Quantity" %>
+		  <%= f.text_field :quantity, placeholder: "Quantity" %>
+		</div>
 
-		 <%= f.label "Price Range" %>
-		 <%= f.text_field :price_range, placeholder: "Price Range" %>
+		<div class="">
+		  <%= f.label "Price Range" %>
+		  <%= f.text_field :price_range, placeholder: "Price Range" %>
+		</div>
 
-		 <%= f.label "Color" %>
-		 <%= f.text_field :color, placeholder: "Color" %>
+		<div class="">
+		  <%= f.label "Color" %>
+		  <%= f.text_field :color, placeholder: "Color" %>
+		</div>
 
-		 <%= f.label "FOB Point" %>
-		 <%= f.text_field :fob_point, placeholder: "FOB Point"  %>
+		<div class="">
+		  <%= f.label "FOB Point" %>
+		  <%= f.text_field :fob_point, placeholder: "FOB Point"  %>
+		</div>
 
-		 <%= f.label "Date Needed" %>
-		 <%= f.text_field :date_needed, placeholder: "Date Needed"  %>
+		<div class="">
+		 	<%= f.label "Date Needed" %>
+		 	<%= f.text_field :date_needed, placeholder: "Date Needed"  %>
+		</div>
 
-		 <%= f.label "Comments" %>
-		 <%= f.text_field :comments, placeholder: "Comments" %>
+		<div class="">
+		 	<%= f.label "Comments" %>
+		 	<%= f.text_field :comments, placeholder: "Comments" %>
+		</div>
 
-	 	<button id="singlebutton" name="singlebutton" class="btn btn-primary"> Submit</button>
+		<div class="">
+	 		<button id="singlebutton" name="singlebutton" class="btn btn-primary"> Submit</button>
+		</div>
 	<% end %>
 	</div>
 </div>
