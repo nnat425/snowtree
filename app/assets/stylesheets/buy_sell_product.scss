@@ -7,10 +7,14 @@
   text-decoration: underline;
   border-color: #55A563;
   text-shadow: 1px 1px grey;
-
 }
 
-.product-background {
+#product-form {
+  color: darkgreen;
+  font-family: serif;
+  margin-bottom: 25px;
+  font-size: 15px;
+  padding: 20px;
   background-color: #F9FFFA ;
   margin-bottom: 60px;
   margin-top: 80px;
@@ -18,22 +22,4 @@
   border-color: #2F833E;
   border-radius: 2em;
   box-shadow: 10px 10px 10px #888888;
-
-}
-
-#product-form {
-  white-space: pre-line;
-  color: darkgreen;
-  font-family: serif;
-  margin-bottom: 25px;
-  font-size: 15px;
-  padding: 20px;
-  text-align: center;
-}
-
-.sub-form {
-  border-style: outset;
-  border-radius: 10px;
-  width: 150px;
-
 }
