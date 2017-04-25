@@ -1,7 +1,6 @@
 <div class="container" >
-    <div id="signupbox" style=" margin-top:50px" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
-			<div >
-			 <div id="product-form" >
+  <div id="signupbox" style=" margin-top:50px" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+	 <div id="product-form" >
 		<div class="form-horizontal ">
 			<%= form_for :products, url: "product_data_collect" do |f| %>
 			<h1 class= "products-title">Buy / Sell Products</h1>
@@ -12,7 +11,7 @@
 					 <%= f.select :product_action, {Buy: "buy", Sell: "sell"} %>
 				 </div>
 			</div>
-			
+
  			<div id="div_id_username" class="form-group required">
 			  <label  class="control-label col-md-3  requiredField"><%= f.label "Company" %></label>
 			<div class="controls col-md-7 ">
@@ -107,7 +106,6 @@
 				</div>
 		<% end %>
 		</div>
-		</div>
-	</div>
-</div>
+	 </div>
+  </div>
 </div>
