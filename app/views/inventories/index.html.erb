@@ -3,6 +3,7 @@
    <div class="table-responsive">
     <table class="table table-bordered">
      <thead id= "inventory-header">
+       <% if logged_in? %>
        <tr>
          <th>Edit</th>
          <th>Delete</th>
@@ -31,6 +32,34 @@
            <td><%= inventory.quantity %></td>
          </tr>
        </tbody>
+       <%end%>
+      <%else %>
+      <thead id= "inventory-header">
+        <tr>
+          <th>Image</th>
+          <th>Type</th>
+          <th>Material Name</th>
+          <th>Grade Number</th>
+          <th>Form</th>
+          <th>Color</th>
+          <th>Quantity</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% @inventories.each do |inventory| %>
+          <tr id="inventory-information">
+            <% if inventory.photos.length > 0 %>
+            <td> <%= link_to image_tag(inventory.photos.first.image.url(:thumb)),inventory %></td>
+            <% end %>
+            <td><%= inventory.content %></td>
+            <td><%= inventory.material_name %></td>
+            <td><%= inventory.grade_number %></td>
+            <td><%= inventory.form %></td>
+            <td><%= inventory.color %></td>
+            <td><%= inventory.quantity %></td>
+          </tr>
+        </tbody>
+       <%end%>
        <%end%>
    </table>
    <div class="pagination">
