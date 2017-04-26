@@ -1,14 +1,14 @@
-<div class="container" id= "contact-form">
-  <div class="row">
-    <div class="col-md-8">
-    <h3 class = "products-title">Send us a Message</h3>
+<div class="container">
+  <div class="mainbox col-md-6 co-md-offset-3 col-sm-8 col-sm-offset-3">
+    <div class="col-md-12" id="contact-form" >
+    <h2 class = "products-title">Contact Us</h2>
     <%= simple_form_for @contact, :html => {:class => 'form-horizontal' } do |f| %>
         <form name="sentMessage" id="contactForm">
             <div class="control-group form-group">
               <div class="controls">
                 <label>Full Name:</label>
                   <%= f.text_field :name,:class => 'form-control',:id => "name" , :required => true %>
-                <p class="help-block"></p>
+
               </div>
             </div>
             <div class="control-group form-group">
