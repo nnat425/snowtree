@@ -1,14 +1,39 @@
-<div align="center">
-  <h3>Contact Us</h3>
-
-  <%= simple_form_for @contact, :html => {:class => 'form-horizontal' } do |f| %>
-    <%= f.input :name, :required => true %>
-    <%= f.input :email, :required => true %>
-    <%= f.input :number, :required => true %>
-    <%= f.input :message, :as => :text, :required => true %>
-    <div>
-      </br>
-      <%= f.button :submit, 'Send message', :class=> "btn btn-primary" %>
+<div class="background ">
+  <div class="container">
+    <div class="mainbox col-md-6 co-md-offset-3 col-sm-8 col-sm-offset-3">
+      <div class="col-md-12" id="contact-form" >
+      <h2 class = "products-title">Contact Us</h2>
+      <%= simple_form_for @contact, :html => {:class => 'form-horizontal' } do |f| %>
+          <form name="sentMessage" id="contactForm">
+              <div class="control-group form-group">
+                <div class="controls">
+                  <label>Full Name:</label>
+                    <%= f.text_field :name,:class => 'form-control',:id => "name" , :required => true %>
+                </div>
+              </div>
+              <div class="control-group form-group">
+                <div class="controls">
+                  <label>Phone Number:</label>
+                  <%= f.text_field :number,:class => 'form-control',:id => "name" , :required => true %>
+                </div>
+              </div>
+              <div class="control-group form-group">
+                <div class="controls">
+                  <label>Email Address:</label>
+                  <%= f.text_field :email,:class => 'form-control',:id => "name" , :required => true %>
+                </div>
+              </div>
+              <div class="control-group form-group">
+                <div class="controls">
+                  <label>Message:</label>
+                  <%= f.text_area :message,:rows =>"10", :cols=>"100",:class => 'form-control',:style=>"resize:none",:id => "message" , :required => true %>
+                </div>
+              </div>
+              <div id="success"></div>
+              <%= f.button :submit, 'Send message', :class=> "btn btn-success" %>
+          <% end %>
+        </form>
+      </div>
     </div>
-  <% end %>
+  </div>
 </div>

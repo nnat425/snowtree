@@ -1,5 +1,6 @@
 class InventoriesController < ApplicationController
-
+  before_filter :authorize, :only => [:new,:create,:edit,:update,:destroy]
+  
   def index
     @inventories = Inventory.paginate(page: params[:page], per_page: 15)
   end
@@ -25,7 +26,7 @@ class InventoriesController < ApplicationController
     end
   end
 
-  def edit 
+  def edit
     @inventory = Inventory.find(params[:id])
     @photos = @inventory.photos
   end
@@ -33,7 +34,7 @@ class InventoriesController < ApplicationController
   def update
     inventory = Inventory.find(params[:id])
     if inventory.update_attributes(inventory_params)
-        params[:photos].each  do |photo_object| 
+        params[:photos].each  do |photo_object|
         photo_id = photo_object[0]
         photo_to_update = Photo.find(photo_id)
         if params[:photos][photo_id][:image] != ""
@@ -44,8 +45,8 @@ class InventoriesController < ApplicationController
       redirect_to inventories_path
     else
       render "edit"
-    end 
-  end 
+    end
+  end
 
   #If param
 

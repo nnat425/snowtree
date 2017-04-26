@@ -1,111 +1,113 @@
-<div class="container" >
-  <div id="signupbox" style=" margin-top:50px" class="mainbox col-md-6 co-md-offset-3 col-sm-8 col-sm-offset-3">
-	 <div id="product-form" >
-		<div class="form-horizontal ">
-			<%= form_for :products, url: "product_data_collect" do |f| %>
-			<h1 class= "products-title">Buy / Sell Products</h1>
+<div class="background" >
+  <div class="container">
+    <div id="signupbox" style=" margin-top:50px" class="mainbox col-md-6 co-md-offset-3 col-sm-8 col-sm-offset-3">
+     <div id="product-form" >
+      <div class="form-horizontal ">
+        <%= form_for :products, url: "product_data_collect" do |f| %>
+        <h1 class= "products-title">Buy / Sell Products</h1>
 
-			<div id="div_id_username" class="form-group required">
-				 <label  class="control-label col-md-3  requiredField"><%= f.label "What you want to do:" %></label>
-				 <div class="controls col-md-5 ">
-					 <%= f.select :product_action, {Buy: "buy", Sell: "sell"} %>
-				 </div>
-			</div>
+        <div id="div_id_username" class="form-group required">
+           <label  class="control-label col-md-3  requiredField"><%= f.label "What you want to do:" %></label>
+           <div class="controls col-md-5 ">
+             <%= f.select :product_action, {Buy: "buy", Sell: "sell"} %>
+           </div>
+        </div>
 
- 			<div id="div_id_username" class="form-group required">
-			  <label  class="control-label col-md-3  requiredField"><%= f.label "Company:" %></label>
-			<div class="controls col-md-7 ">
-			  <%= f.text_field :company_name,:class => 'input-md  textinput textInput form-control', :id=>"id_number" , placeholder: "Company Name" %>
-				</div>
-			</div>
+        <div id="div_id_username" class="form-group required">
+          <label  class="control-label col-md-3  requiredField"><%= f.label "Company:" %></label>
+        <div class="controls col-md-7 ">
+          <%= f.text_field :company_name,:class => 'input-md  textinput textInput form-control', :id=>"id_number" , placeholder: "Company Name" , :required => true%>
+          </div>
+        </div>
 
-			<div id="div_id_username" class="form-group required">
-			  <label  class="control-label col-md-3  requiredField"><%= f.label "Name:" %></label>
-			 <div class="controls col-md-7 ">
-			  <%= f.text_field :name,:class => 'input-md  textinput textInput form-control', :id=>"id_number" , placeholder: "Name" %>
-				</div>
-			</div>
+        <div id="div_id_username" class="form-group required">
+          <label  class="control-label col-md-3  requiredField"><%= f.label "Name:" %></label>
+         <div class="controls col-md-7 ">
+          <%= f.text_field :name,:class => 'input-md  textinput textInput form-control', :id=>"id_number" , placeholder: "Name", :required => true %>
+          </div>
+        </div>
 
-			 <div id="div_id_username" class="form-group required">
-			   <label  class="control-label col-md-3  requiredField"><%= f.label "Phone Number:" %></label>
-				<div class="controls col-md-7 ">
-			  	<%= f.text_field :phone_number ,:class => 'input-md  textinput textInput form-control', :id=>"id_number" , placeholder: "Phone Number"%>
-				</div>
-			</div>
+         <div id="div_id_username" class="form-group required">
+           <label  class="control-label col-md-3  requiredField"><%= f.label "Phone Number:" %></label>
+          <div class="controls col-md-7 ">
+            <%= f.text_field :phone_number ,:class => 'input-md  textinput textInput form-control', :id=>"id_number" , placeholder: "Phone Number", :required => true%>
+          </div>
+        </div>
 
-			<div id="div_id_username" class="form-group required">
-		  	<label  class="control-label col-md-3  requiredField"><%= f.label "Email:" %></label>
-			 <div class="controls col-md-7 ">
-		  	<%= f.text_field :email,:class => 'input-md  textinput textInput form-control', :id=>"id_number" , placeholder: "Email" %>
- 				</div>
-			</div>
+        <div id="div_id_username" class="form-group required">
+          <label  class="control-label col-md-3  requiredField"><%= f.label "Email:" %></label>
+         <div class="controls col-md-7 ">
+          <%= f.text_field :email,:class => 'input-md  textinput textInput form-control', :id=>"id_number" , placeholder: "Email" , :required => true%>
+          </div>
+        </div>
 
-			<div id="div_id_username" class="form-group required">
-			  <label  class="control-label col-md-3  requiredField"><%= f.label "Plastic Material:" %></label>
-			 <div class="controls col-md-7 ">
-			  <%= f.text_field :plastic_material,:class => 'input-md  textinput textInput form-control', :id=>"id_number" ,  placeholder: "Plastic Material"%>
-			</div>
-		</div>
+        <div id="div_id_username" class="form-group required">
+          <label  class="control-label col-md-3  requiredField"><%= f.label "Plastic Material:" %></label>
+         <div class="controls col-md-7 ">
+          <%= f.text_field :plastic_material,:class => 'input-md  textinput textInput form-control', :id=>"id_number" ,  placeholder: "Plastic Material", :required => true%>
+        </div>
+      </div>
 
-			<div id="div_id_username" class="form-group required">
-			  <label  class="control-label col-md-3  requiredField"><%= f.label "Plastic Form:" %></label>
-				<div class="controls col-md-7 ">
-			  	<%= f.text_field :plastic_form,:class => 'input-md  textinput textInput form-control', :id=>"id_number" ,  placeholder: "Plastic Form"  %>
-				</div>
-			</div>
+        <div id="div_id_username" class="form-group required">
+          <label  class="control-label col-md-3  requiredField"><%= f.label "Plastic Form:" %></label>
+          <div class="controls col-md-7 ">
+            <%= f.text_field :plastic_form,:class => 'input-md  textinput textInput form-control', :id=>"id_number" ,  placeholder: "Plastic Form" , :required => true %>
+          </div>
+        </div>
 
-			<div id="div_id_username" class="form-group required">
-				<label  class="control-label col-md-3  requiredField"><%= f.label "Quantity:" %></label>
-			 <div class="controls col-md-7 ">
-			  <%= f.text_field :quantity,:class => 'input-md  textinput textInput form-control', :id=>"id_number" , placeholder: "Quantity" %>
-			</div>
-		</div>
+        <div id="div_id_username" class="form-group required">
+          <label  class="control-label col-md-3  requiredField"><%= f.label "Quantity:" %></label>
+         <div class="controls col-md-7 ">
+          <%= f.text_field :quantity,:class => 'input-md  textinput textInput form-control', :id=>"id_number" , placeholder: "Quantity", :required => true %>
+        </div>
+      </div>
 
-			<div id="div_id_username" class="form-group required">
-			  <label  class="control-label col-md-3  requiredField"><%= f.label "Price Range:" %></label>
-			 <div class="controls col-md-7 ">
-			   <%= f.text_field :price_range,:class => 'input-md  textinput textInput form-control', :id=>"id_number" ,  placeholder: "Price Range" %>
-			 </div>
-			</div>
+        <div id="div_id_username" class="form-group required">
+          <label  class="control-label col-md-3  requiredField"><%= f.label "Price Range:" %></label>
+         <div class="controls col-md-7 ">
+           <%= f.text_field :price_range,:class => 'input-md  textinput textInput form-control', :id=>"id_number" ,  placeholder: "Price Range", :required => true %>
+         </div>
+        </div>
 
-			<div id="div_id_username" class="form-group required">
-			  <label class="control-label col-md-3  requiredField"><%= f.label "Color:" %></label>
-			 	<div class="controls col-md-7 ">
-			  	<%= f.text_field :color,:class => 'input-md  textinput textInput form-control', :id=>"id_number" , placeholder: "Color" %>
-			 </div>
- 	 		</div>
+        <div id="div_id_username" class="form-group required">
+          <label class="control-label col-md-3  requiredField"><%= f.label "Color:" %></label>
+          <div class="controls col-md-7 ">
+            <%= f.text_field :color,:class => 'input-md  textinput textInput form-control', :id=>"id_number" , placeholder: "Color", :required => true %>
+         </div>
+        </div>
 
-			<div id="div_id_username" class="form-group required">
-			 	<label class="control-label col-md-3  requiredField"><%= f.label "FOB Point:" %></label>
-				<div class="controls col-md-7 ">
-			  	<%= f.text_field :fob_point,:class => 'input-md  textinput textInput form-control', :id=>"id_number" , placeholder: "FOB Point"  %>
-				</div>
-			</div>
+        <div id="div_id_username" class="form-group required">
+          <label class="control-label col-md-3  requiredField"><%= f.label "FOB Point:" %></label>
+          <div class="controls col-md-7 ">
+            <%= f.text_field :fob_point,:class => 'input-md  textinput textInput form-control', :id=>"id_number" , placeholder: "FOB Point" , :required => true %>
+          </div>
+        </div>
 
-		<div id="div_id_username" class="form-group required">
-			<label class="control-label col-md-3  requiredField"><%= f.label "Date Needed:" %></label>
-			<div class="controls col-md-7 ">
-			 	<%= f.text_field :date_needed,:class => 'input-md  textinput textInput form-control', :id=>"id_number" , placeholder: "Date Needed"  %>
-			</div>
-		</div>
+      <div id="div_id_username" class="form-group required">
+        <label class="control-label col-md-3  requiredField"><%= f.label "Date Needed:" %></label>
+        <div class="controls col-md-7 ">
+          <%= f.text_field :date_needed,:class => 'input-md  textinput textInput form-control', :id=>"id_number" , placeholder: "Date Needed" , :required => true %>
+        </div>
+      </div>
 
-			<div id="div_id_username" class="form-group required">
-			 	<label class="control-label col-md-3  requiredField"><%= f.label "Comments:" %></label>
-				<div class="controls col-md-7 ">
-			 		<%= f.text_field :comments,:class => 'input-md  textinput textInput form-control', :id=>"id_number" ,:style =>"margin-bottom: 10px",placeholder: "Comments" %>
-				</div>
-			</div>
+        <div id="div_id_username" class="form-group required">
+          <label class="control-label col-md-3  requiredField"><%= f.label "Comments:" %></label>
+          <div class="controls col-md-7 ">
+            <%= f.text_field :comments,:class => 'input-md  textinput textInput form-control', :id=>"id_number" ,:style =>"margin-bottom: 10px",placeholder: "Comments" , :required => true%>
+          </div>
+        </div>
 
-			<div class="form-group">
-				<div class="aab controls col-md-4 "></div>
-					<div class="controls col-md-8 ">
-						<div class="btn-group btn-group-lg">
-		 					<input type="submit" name="Submit" value="Submit" class=" btn btn-success"/>
-						</div>
-					</div>
-				</div>
-		<% end %>
-		</div>
-	 </div>
+        <div class="form-group">
+          <div class="aab controls col-md-4 "></div>
+            <div class="controls col-md-8 ">
+              <div class="btn-group btn-group-lg">
+                <input type="submit" name="Submit" value="Submit" class=" btn btn-success"/>
+              </div>
+            </div>
+          </div>
+      <% end %>
+      </div>
+     </div>
+    </div>
+    </div>
   </div>
-</div>
