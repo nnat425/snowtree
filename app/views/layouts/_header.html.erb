@@ -39,8 +39,8 @@
               <li><%=link_to "Consulting", consulting_path %></li>
               <li><%=link_to "Transportation" , transportation_path %></li>
               <li> <%=link_to "Contact Us", contacts_path%></li>
-              <li><%= link_to "Log Out", logout_path, method: :delete %></li>
               <li><%= link_to "admin_panel",admin_panel_path%></li>
+              <li><%= link_to "Log Out", logout_path, method: :delete %></li>
               <%else%>
               <li class="active"><%= link_to "Home" , root_path %> </li>
               <li><%= link_to "Inventory" , inventories_path %></li>
