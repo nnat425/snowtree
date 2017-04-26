@@ -1,20 +1,21 @@
 .inventory-index {
   table-layout: auto;
-  background-color: #F5FFF7 ;
+  background-color: #F9FFFA ;
   border-style: outset;
   border-color: #2F833E;
   display: block;
   margin-left: 20%;
   margin-bottom: 15px;
   margin-top: 80px;
+  border-radius: 2em;
+  box-shadow: 10px 10px 10px #888888;
 }
 
 #iventory-title {
   font-size: 44px;
   color: green;
-  font-family: cursive;
+  font-family:"Baskerville", Monaco, monospace;
   margin-top: 100px;
-  font-weight: bold;
   margin-bottom: 25px;
   border-bottom-style: solid;
   border-color: #55A563;
@@ -24,7 +25,7 @@
 #inventory-header {
   background-color: #99E8B7;
   font-size: 18px;
-  font-family: cursive;
+  font-family: 'Times New Roman';
   border-style: groove;
 }
 
