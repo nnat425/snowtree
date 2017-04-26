@@ -1,4 +1,5 @@
 class AdminsController < ApplicationController
+  before_filter :authorize, :only => [:admin_panel]
 
   def admin_panel
   end
