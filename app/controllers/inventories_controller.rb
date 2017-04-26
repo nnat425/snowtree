@@ -1,5 +1,6 @@
 class InventoriesController < ApplicationController
   before_filter :authorize, :only => [:new,:create,:edit,:update,:destroy]
+  
   def index
     @inventories = Inventory.paginate(page: params[:page], per_page: 15)
   end
