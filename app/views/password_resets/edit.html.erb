@@ -7,7 +7,7 @@
 <%= form_tag password_reset_path, :method => :put do %>
   <%= password_field_tag :password %>
   <%= hidden_field_tag :token, @token %>
-  <input type="submit" name="Submit" value="Submit" class=" btn btn-success"/>
+  <input type="submit" name="Submit" value="Update" class=" btn btn-success"/>
 <% end %>
 </div>
 </div>
