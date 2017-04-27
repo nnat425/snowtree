@@ -1,7 +1,7 @@
 <div class="background">
   <div class="container">
     <div class="row">
-      <div class="mainbox col-md-6 co-md-offset-3 col-sm-5 col-sm-offset-3">
+      <div class="mainbox col-md-6 co-md-offset-4 col-sm-5 col-sm-offset-3">
         <div class="col-md-12" id="login" >
           <%= form_for :session, url: sessions_path do |f| %>
         <form role="form">
@@ -19,7 +19,7 @@
           <% end %>
           <div class="form-group text-center">
             <div class="logo">
-              <span class="glyphicon glyphicon-flash set-logo"></span>
+             <img src="/snowtree.png" alt="logo" width="320">
             </div>
 
           </div>
@@ -36,13 +36,13 @@
           </div>
 
           <div class="form-group last-row">
-            <a href="#" class="pull-right">Forgot password</a>
+            <a href="/password_resets/new" class="pull-right">Forgot password</a>
           </div>
 
           <% end %>
         </form>
+        </div>
       </div>
-          </div>
     </div>
   </div>
 </div>
