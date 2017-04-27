@@ -2,7 +2,7 @@
   color: darkgreen;
   font-family:"Helvetica";
   font-size: 15px;
-  padding: 55px;
+  padding: 15px;
   background-color: #F9FFFA ;
   margin-bottom: 60px;
   margin-top: 80px;
@@ -10,24 +10,12 @@
   border-color: #2F833E;
   border-radius: 2em;
   box-shadow: 10px 10px 10px #888888;
+  display: inline-block;
 }
-.set-logo {
-    // background:#fff;
-    color:#ddd;
-    border-radius:500%;
-    padding:11px;
-    font-size:108px;
-    border: solid #ddd 14px;
-}
+
 .logo {
     margin-top:27px;
     margin-bottom:54px;
+    // display: block;
+
 }
-//
-// .last-row {
-//     margin-bottom:0px;
-// }
-//
-// .checklabel {
-//     font-weight:100;
-// }
