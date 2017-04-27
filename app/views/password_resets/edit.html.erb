@@ -1,13 +1,15 @@
 <div class="container">
-  <div class="password-reset">
-<h1>Update your password</h1>
-
-<p>Please enter the new password below and then press "Update Password".</p>
-
-<%= form_tag password_reset_path, :method => :put do %>
-  <%= password_field_tag :password %>
-  <%= hidden_field_tag :token, @token %>
-  <input type="submit" name="Submit" value="Update" class=" btn btn-success"/>
-<% end %>
-</div>
+  <div id="signupbox" style=" margin-top:50px" class="mainbox col-md-6 co-md-offset-3 col-sm-8 col-sm-offset-3">
+    <div class="password-reset">
+      <div class="form-horizontal ">
+        <h1>Update your password</h1>
+        <p>Please enter the new password below and then press "Update Password".</p>
+        <%= form_tag password_reset_path, :method => :put do %>
+        <%= password_field_tag :password %>
+        <%= hidden_field_tag :token, @token %>
+        <input type="submit" name="Submit" value="Update" class=" btn btn-success"/>
+        <% end %>
+      </div>
+    </div>
+  </div>
 </div>
