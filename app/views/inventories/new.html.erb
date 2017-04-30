@@ -1,6 +1,8 @@
 <div class = "container">
-  <div id="signupbox" style=" margin-top:50px" class="mainbox col-md-6 co-md-offset-3 col-sm-8 col-sm-offset-3">
+  <div id="signupbox" class="mainbox col-md-6 co-md-offset-3 col-sm-8 col-sm-offset-3">
+
    <div id="inventory-new-form" >
+             <h1 class="page-header products-title"> New Inventory </h1>
     <div class="form-horizontal ">
     <%= form_for @inventory, html: {multipart: true} do |f| %>
     <% if @inventory.errors.any? %>
@@ -15,47 +17,71 @@
       <% end %>
         <div id="target"></div>
 
-        <div class="field">
-          <%= f.label :pictures %>
+        <div class="form-group required">
+          <label  class="control-label col-md-3  requiredField"><%= f.label "Pictures" %></label>
+          <div class="controls col-md-5 ">
           <%= file_field_tag "photos[]", type: :file %>
         </div>
+      </div>
 
-        <div id='add-image-div'>
-          <button id='add-image'>Add Image</button>
+      <div class="form-group required">
+        <label  class="control-label col-md-3  requiredField"><%= f.label "Pictures" %></label>
+        <div class="controls col-md-5 ">
+          <div id='add-image-div'>
+            <button id='add-image' value="Submit" >Add Image</button>
+          </div>
         </div>
+      </div>
 
-       <div class="field">
-         <%= f.label :type %>
-         <%= f.text_field :content %>
+      <div id="div_id_username" class="form-group required">
+        <label  class="control-label col-md-3  requiredField"><%= f.label "type:" %></label>
+      <div class="controls col-md-7 ">
+          <%= f.text_field :content,:class => 'input-md  textinput textInput form-control', :id=>"id_number" , placeholder: "Content/Type" , :required => true%>
         </div>
+      </div>
 
-        <div class="field">
-          <%= f.label :material_name %>
-          <%= f.text_field :material_name %>
+      <div id="div_id_username" class="form-group required">
+        <label  class="control-label col-md-3  requiredField"><%= f.label "Material Name:" %></label>
+      <div class="controls col-md-7 ">
+          <%= f.text_field :material_name,:class => 'input-md  textinput textInput form-control', :id=>"id_number" , placeholder: "Material Name" , :required => true%>
         </div>
+      </div>
 
-        <div class="field">
-          <%= f.label :grade_number %>
-          <%= f.text_field :grade_number %>
+      <div id="div_id_username" class="form-group required">
+        <label  class="control-label col-lg-3  requiredField"><%= f.label "Grade Number:" %></label>
+      <div class="controls col-md-7 ">
+        <%= f.text_field  :grade_number,:class => 'input-md  textinput textInput form-control', :id=>"id_number" , placeholder: "Grade Number" , :required => true%>
         </div>
+      </div>
 
-        <div class="field">
-          <%= f.label :form %>
-          <%= f.text_field :form %>
+      <div id="div_id_username" class="form-group required">
+        <label  class="control-label col-lg-3  requiredField"><%= f.label "Form:" %></label>
+      <div class="controls col-md-7 ">
+        <%= f.text_field  :form,:class => 'input-md  textinput textInput form-control', :id=>"id_number" , placeholder: "Form" , :required => true%>
         </div>
+      </div>
 
-        <div class="field">
-          <%= f.label :color %>
-          <%= f.text_field  :color %>
+      <div id="div_id_username" class="form-group required">
+        <label  class="control-label col-lg-3  requiredField"><%= f.label "Color:" %></label>
+        <div class="controls col-md-7 ">
+          <%= f.text_field  :form,:class => 'input-md  textinput textInput form-control', :id=>"id_number" , placeholder: "Color" , :required => true%>
         </div>
+      </div>
 
-        <div class="field">
-          <%= f.label :quantity %>
-          <%= f.number_field :quantity %>
+      <div id="div_id_username" class="form-group required">
+        <label  class="control-label col-lg-3  requiredField"><%= f.label "Quantity:" %></label>
+        <div class="controls col-md-7 ">
+          <%= f.text_field  :quantity,:class => 'input-md  textinput textInput form-control', :id=>"id_number" , placeholder: "Quantity" , :required => true%>
         </div>
+      </div>
 
-        <div class="actions">
-          <%= f.submit %>
+      <div class="form-group">
+        <div class="aab controls col-md-4 "></div>
+          <div class="controls col-md-8 ">
+            <div class="btn-group btn-group-lg">
+              <input type="submit" name="Submit" value="Submit" class=" btn btn-success"/>
+            </div>
+          </div>
         </div>
       <% end %>
       </div>
