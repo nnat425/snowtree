@@ -1,8 +1,7 @@
 <div class = "container">
   <div id="signupbox" class="mainbox col-md-6 co-md-offset-3 col-sm-8 col-sm-offset-3">
-
    <div id="inventory-new-form" >
-             <h1 class="page-header products-title"> New Inventory </h1>
+      <h1 class="page-header products-title"> New Inventory </h1>
     <div class="form-horizontal ">
     <%= form_for @inventory, html: {multipart: true} do |f| %>
     <% if @inventory.errors.any? %>
