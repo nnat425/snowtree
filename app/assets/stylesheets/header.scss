@@ -1,0 +1,30 @@
+#header-nav {
+  font-family:"Abel", Monaco, monospace;
+  font-size: 14px;
+}
+
+#header-nav  a {
+  color: black;
+}
+#header-nav .nav > li > a:hover{
+    background-color:#B7E8D9;
+}
+
+#header-nav .specialColor {
+  background-color: #D3F8D9 ;
+}
+
+#header-nav .specialColor  > li > a:hover{
+  background-color:#B7E8D9;
+}
+
+.nav-background {
+  background-color:#D3F8D9 ;
+  font-color: black;
+  opacity: .9;
+
+}
+
+.toggle-color {
+  background-color: darkgreen;
+}
