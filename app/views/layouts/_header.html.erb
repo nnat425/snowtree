@@ -37,15 +37,13 @@
             <li> <%=link_to "Contact Us", contacts_path%></li>
             <%if logged_in?%>
             <li class="dropdown">
-        <a href="#" class="dropdown-toggle glyphicon glyphicon-user specialColor" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <span class="caret"></span></a>
-        <ul class="dropdown-menu specialColor">
-          <li><%= link_to "admin_panel",admin_panel_path%></li>
-          <li role="separator" class="divider"></li>
-          <li><%= link_to "Log Out", logout_path, method: :delete %></li>
-        </ul>
-
-
-            <%end%>
+              <a href="#" class="dropdown-toggle glyphicon glyphicon-user specialColor" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <span class="caret"></span></a>
+          <ul class="dropdown-menu specialColor">
+            <li><%= link_to "admin_panel",admin_panel_path%></li>
+            <li role="separator" class="divider"></li>
+            <li><%= link_to "Log Out", logout_path, method: :delete %></li>
+          </ul>
+          <%end%>
           </ul>
         </div>
         </div>
