@@ -3,6 +3,14 @@
 
 }
 
+#header-nav  a:hover {
+  color: darkgreen;
+}
+
+#header-nav .nav > li > a:hover{
+    background-color:#B7E8D9;
+}
+
 .nav-background {
     background-color:#D9FFE8 ;
     font-color: black;
