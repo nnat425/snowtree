@@ -3,20 +3,21 @@
   font-size: 15px;
   font-weight: bold;
 
+
 }
 
-#header-nav  a:hover {
+#header-nav  a {
   color: darkgreen;
 }
-
 #header-nav .nav > li > a:hover{
     background-color:#B7E8D9;
 }
 
 .nav-background {
-    background-color:#D9FFE8 ;
-    font-color: black;
-    opacity: .9;
+  background-color:#D3F8D9 ;
+  font-color: black;
+  opacity: .9;
+
 }
 
 .toggle-color {
