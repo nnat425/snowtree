@@ -1,99 +1,168 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,300);
+.footer-distributed{
+	background-color: #292c2f;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
 
-footer {
-  background-color:#0c1a1e; min-height:350px; font-family: 'Open Sans', sans-serif;
+	padding: 55px 50px;
+	margin-top: 80px;
 }
 
-.footerleft {
-  margin-top:50px; padding:0 36px;
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
 }
 
-.logofooter {
-  margin-bottom:10px; font-size:25px; color:#fff; font-weight:700;
+/* Footer left */
+
+.footer-distributed .footer-left{
+	width: 40%;
 }
 
-.footerleft p {
-  color:#fff; font-size:12px !important; font-family: 'Open Sans', sans-serif; margin-bottom:15px;
+/* The company logo */
+
+.footer-distributed h3{
+	color:  #ffffff;
+	font: normal 36px 'Cookie', cursive;
+	margin: 0;
 }
 
-.footerleft p i {
-  width:20px; color:#999;
+.footer-distributed h3 span{
+	color:  #5383d3;
 }
 
-.paddingtop-bottom {
-  margin-top:50px;
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+	padding: 0;
 }
 
-.footer-ul {
-  list-style-type:none;  padding-left:0px; margin-left:2px;
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
 }
 
-.footer-ul li {
-  line-height:29px; font-size:12px;
+.footer-distributed .footer-company-name{
+	color:  #8f9296;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
 }
 
-.footer-ul li a {
-  color:#a0a3a4; transition: color 0.2s linear 0s, background 0.2s linear 0s;
+/* Footer Center */
+
+.footer-distributed .footer-center{
+	width: 35%;
 }
 
-.footer-ul i {
-  margin-right:10px;
+.footer-distributed .footer-center i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
 }
 
-.footer-ul li a:hover {
-  transition: color 0.2s linear 0s, background 0.2s linear 0s; color:#ff670f;
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
 }
 
-.social:hover {
-  -webkit-transform: scale(1.1);
-  -moz-transform: scale(1.1);
-  -o-transform: scale(1.1);
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+	vertical-align: middle;
+	margin:0;
 }
 
-.icon-ul {
-  list-style-type:none !important; margin:0px; padding:0px;
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
 }
 
-.icon-ul li {
-  line-height:75px; width:100%; float:left;
+.footer-distributed .footer-center p a{
+	color:  #5383d3;
+	text-decoration: none;;
 }
 
-.icon {
-  float:left; margin-right:5px;
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	width: 20%;
 }
 
-.copyright {
-  min-height:40px; background-color:#000000;
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  #92999f;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
 }
 
-.copyright p {
-  text-align:left; color:#FFF; padding:10px 0; margin-bottom:0px;
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  #ffffff;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 20px;
 }
 
-.heading7 {
-  font-size:21px; font-weight:700; color:#d9d6d6; margin-bottom:22px;
+.footer-distributed .footer-icons{
+	margin-top: 25px;
 }
 
-.post p {
-  font-size:12px; color:#FFF; line-height:20px;
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
 }
 
-.post p span {
-  display:block; color:#8f8f8f;
-}
+/* If you don't want the footer to be responsive, remove these media queries */
 
-.bottom_ul {
-  list-style-type:none; float:right; margin-bottom:0px;
-}
+@media (max-width: 880px) {
 
-.bottom_ul li {
-  float:left; line-height:40px;
-}
+	.footer-distributed{
+		font: bold 14px sans-serif;
+	}
 
-.bottom_ul li:after {
-  content:"/"; color:#FFF; margin-right:8px; margin-left:8px;
-}
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
 
-.bottom_ul li a {
-  color:#FFF;  font-size:12px;
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+
 }
