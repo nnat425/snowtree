@@ -6,17 +6,17 @@
 				<h3>Company<span>logo</span></h3>
 
 				<p class="footer-links">
-					<a href="#">Home</a>
-					·
-					<a href="#">Blog</a>
-					·
-					<a href="#">Pricing</a>
-					·
-					<a href="#">About</a>
-					·
-					<a href="#">Faq</a>
-					·
-					<a href="#">Contact</a>
+					<%= link_to "Home" , root_path %>
+						·
+					<%= link_to "Inventory" , inventories_path %>
+						·
+					<%=link_to "Buy/Sell Products", buy_sell_products_path %>
+						·
+					<%=link_to "Consulting", consulting_path %>
+						·
+					<%=link_to "Transportation" , transportation_path %>
+						·
+					<%=link_to "Contact Us", contacts_path%>
 				</p>
 
 				<p class="footer-company-name">Company Name &copy; 2015</p>
