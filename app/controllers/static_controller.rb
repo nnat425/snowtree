@@ -1,6 +1,9 @@
 class StaticController < ApplicationController
 
 def index
+	@inventories = Inventory.all
+	@photos = Photo.all
+	
 end
 
 def products
