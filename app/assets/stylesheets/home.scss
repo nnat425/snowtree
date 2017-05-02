@@ -7,9 +7,23 @@ height: 400px;
   margin-bottom: 150px;
 }
 
-.panel-default {
-  background-color: darkgreen;
+
+.panel-color {
+  background-color:  #D3F8D9 ;
 }
+
+.panel-color1 {
+  background-color: #D9FFE8;
+}
+
+.panel-color2 {
+  background-color:  #D3F8D9 ;
+}
+
+.panel-color-body {
+  background-color: #F4FFF6;
+}
+
 @media only screen and(max-width:768px) {
   .image1 {
     height:200px!important;
