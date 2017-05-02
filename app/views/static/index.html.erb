@@ -29,9 +29,6 @@
 			</div>
 		</div>
 	</div>
-
-
-
 	<a class="left carousel-control" href="#carousel-example" data-slide="prev">
 		<span class="glyphicon glyphicon-chevron-left"></span>
 	</a>
@@ -101,7 +98,7 @@
 	<%@inventories.each do |img|%>
 		<div class="col-md-2 "style="width: 10.4rem">
 			<ul>
-			<li class="img-responsive"><%=image_tag(img.photos.first.image(:thumb))%></li>
+			<li class="img-responsive border-image"><%=image_tag(img.photos.first.image(:thumb))%></li>
 		</ul>
 		</div>
 		<%end%>
