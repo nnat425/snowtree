@@ -93,14 +93,23 @@
 			</div>
 		</div>
 	</div>
+
 	<div class="row">
 		<div class="col-lg-12">
 		<h2 class="page-header">Checkout out some Current Inventory</h2>
 		</div>
-		<div class="col-md-2">
-			<img class="img-responsive" src="/images/img1.jpg" />
-		</div>
-		<div class="col-md-2">
+
+<%@inventories.each do |img|%>
+<div class="col-md-2">
+	<ul>
+	<!-- <img class="img-responsive" src="/images/img1.jpg" /> -->
+	<li class="img-responsive"><%=image_tag(img.photos.first.image(:thumb))%></li>
+</ul>
+</div>
+	<%end%>
+
+
+		<!-- <div class="col-md-2">
 			<img class="img-responsive" src="/images/img2.jpg" />
 		</div>
 
@@ -115,6 +124,7 @@
 		</div>
 		<div class="col-md-2">
 			<img class="img-responsive" src="/images/img4.jpg" />
-		</div>
+		</div> -->
 	</div>
+
 </div>
