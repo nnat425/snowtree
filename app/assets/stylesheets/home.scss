@@ -4,9 +4,12 @@ height: 400px;
 
 .home-page {
   margin-top: 50px;
+  margin-bottom: 150px;
 }
 
-
+.panel-default {
+  background-color: darkgreen;
+}
 @media only screen and(max-width:768px) {
   .image1 {
     height:200px!important;
