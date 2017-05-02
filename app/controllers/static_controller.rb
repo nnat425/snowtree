@@ -1,9 +1,9 @@
 class StaticController < ApplicationController
 
 def index
-	@inventories = Inventory.all
+	@inventories = Inventory.paginate(page: params[:page], per_page: 6)
 	@photos = Photo.all
-	
+
 end
 
 def products
