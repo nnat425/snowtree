@@ -1,4 +1,4 @@
-class InformationBoxes extends React.Component {
+class SecondInformationBoxes extends React.Component {
   render(){
     return(
       <div className="row information-boxes">
