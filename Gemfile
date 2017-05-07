@@ -27,7 +27,7 @@ gem 'will_paginate'
 gem 'will_paginate-bootstrap'
 # Use ActiveModel has_secure_password
  gem 'bcrypt', '~> 3.1.7'
-
+gem "react-rails"
 gem 'bootstrap-sass', '~> 3.3.6'
 
 gem 'pry'
