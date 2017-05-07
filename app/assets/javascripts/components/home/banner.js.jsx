@@ -27,7 +27,7 @@ class BannerPictures extends React.Component {
       		<a className="right carousel-control" href="#carousel-example" data-slide="next">
       			<span className="glyphicon glyphicon-chevron-right"></span>
       		</a>
-        </div>
+      </div>
     );
   }
 }
