@@ -28,6 +28,6 @@ class BannerPictures extends React.Component {
       			<span className="glyphicon glyphicon-chevron-right"></span>
       		</a>
         </div>
-    )
+    );
   }
 }
