@@ -20,23 +20,24 @@ height: 400px;
   margin-top: 50px;
   margin-bottom: 60px;
 }
+
 .panel-color {
-  background-color:  #CBF3BB    ;
+  background-color:  #CBF3BB;
   box-shadow: 10px 10px 10px #888888;
 }
 
 .panel-color1 {
-  background-color: #CBF3BB    ;
+  background-color: #CBF3BB;
   box-shadow: 10px 10px 10px #888888;
 }
 
 .panel-color2 {
-  background-color:#CBF3BB  ;
+  background-color:#CBF3BB;
   box-shadow: 10px 10px 10px #888888;
 }
 
 .panel-color-body {
-  background-color: #F5EFD5   ;
+  background-color: #F5EFD5;
   box-shadow: 10px 10px 10px #888888;
 }
 
@@ -70,7 +71,25 @@ height: 400px;
 }
 
 .service-box {
-  padding: 20px;
+  padding-bottom: 110px;
+}
+
+.service-box1 {
+  padding-bottom: 70px;
+}
+
+.panel  .service-box  {
+  height: 200px;
+  padding-top: 20px;
+}
+.panel .consulation {
+  height: 200px;
+  padding-top: 20px;
+}
+
+.panel .inventory {
+  height: 200px;
+  padding-top: 20px;
 }
 
 @media only screen and(max-width:768px) {
