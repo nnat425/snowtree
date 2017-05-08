@@ -15,10 +15,10 @@ class SecondInformationBoxes extends React.Component {
   			<div className="col-md-4">
   				<div className="panel">
   					<div className="panel-heading panel-color1">
-  						<h4><i className="fa fa-fw fa-gift"></i> Free &amp; Open Source</h4>
+  						<h4><i className="fa fa-fw fa-gift"></i> Consultation</h4>
   					</div>
   					<div className="panel-body panel-color-body ">
-  						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
+  						<p>We will match up the supply of material with the correct customer to achieve a best net back to the supplier. We make sure that our suppliers produce quality material for customers around the world.  The ability technically assures both the customer and the supplier of smooth transaction with rarely issues of quality.  </p>
   					</div>
   				</div>
   			</div>
