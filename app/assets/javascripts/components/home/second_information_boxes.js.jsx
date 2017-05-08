@@ -18,7 +18,7 @@ class SecondInformationBoxes extends React.Component {
   						<h4><i className="glyphicon glyphicon-bookmark"></i> Consultation</h4>
   					</div>
   					<div className="panel-body panel-color-body consulation ">
-  						<p>We will match up the supply of material with the correct customer to achieve a best net back to the supplier. We make sure that our suppliers produce quality material for customers around the world.  The ability technically assures both the customer and the supplier of smooth transaction with rarely issues of quality.  </p>
+  						<p>We will match up the supply of material with the correct customer to achieve a best net back to the supplier. We make sure that our suppliers produce quality material for customers around the world.  </p>
   					</div>
   				</div>
   			</div>
