@@ -1,5 +1,5 @@
 .image1 {
-height: 400px;
+height: 500px;
 }
 
 .banner-move {
@@ -8,7 +8,8 @@ height: 400px;
 
 .font-style-info  {
   font-family:  ITC Franklin Gothic Std;
-  font-size: 15px;
+  font-size: 14px;
+  text-align: center;
 }
 
 .font-style-header {
@@ -17,8 +18,9 @@ height: 400px;
   font-weight: bold;
 
 }
+
 .home-title {
-  font-size: 44px;
+  font-size: 34px;
   color: #003366;
   font-family:"Abel", Monaco, monospace;
   margin-bottom: 25px;
@@ -42,12 +44,16 @@ height: 400px;
 .info-text {
   text-align: center;
   color: darkgreen;
+  margin: 10%;
 }
 
+.margin-info {
+
+}
 .information-boxes {
   margin-top: 50px;
   margin-bottom: 60px;
-  padding: 100px;
+  padding: 40px;
 }
 
 .first-box-padding {
