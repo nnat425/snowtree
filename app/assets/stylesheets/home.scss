@@ -1,5 +1,5 @@
 .image1 {
-height: 500px;
+  height: 500px;
 }
 
 .banner-move {
@@ -45,21 +45,21 @@ height: 500px;
 }
 
 .glyphicon.glyphicon-phone {
-    font-size: 50px;
-    color: green;
-    opacity: .7;
+  font-size: 50px;
+  color: green;
+  opacity: .7;
 }
 
 .glyphicon.glyphicon-dashboard {
-    font-size: 50px;
-    color: green;
-    opacity: .7;
+  font-size: 50px;
+  color: green;
+  opacity: .7;
 }
 
 .glyphicon.glyphicon-search {
-    font-size: 50px;
-    color: green;
-    opacity: .7;
+  font-size: 50px;
+  color: green;
+  opacity: .7;
 
 }
 
@@ -82,13 +82,12 @@ height: 500px;
 
 .first-box {
   margin-top: -10px;
-
   background: -webkit-linear-gradient(135deg, rgba(0,0,0,0) 25%, rgba(255,255,255,0.2) 25%, rgba(255,255,255,0.2) 50%, rgba(0,0,0,0) 50%, rgba(0,0,0,0) 75%, rgba(255,255,255,0.2) 75%), -webkit-repeating-radial-gradient(rgba(0,0,0,0) 0, rgba(0,0,0,0) 25%, rgba(255,255,255,0.2) 25%, rgba(0,0,0,0) 27%, rgba(255,255,255,0.2) 50%, rgba(0,0,0,0) 50%, rgba(0,0,0,0) 75%, rgba(255,255,255,0.2) 75%, rgba(255,255,255,0.2) 100%), rgba(215,234,217,1);
   background: -moz-linear-gradient(-45deg, rgba(0,0,0,0) 25%, rgba(255,255,255,0.2) 25%, rgba(255,255,255,0.2) 50%, rgba(0,0,0,0) 50%, rgba(0,0,0,0) 75%, rgba(255,255,255,0.2) 75%), -moz-repeating-radial-gradient(rgba(0,0,0,0) 0, rgba(0,0,0,0) 25%, rgba(255,255,255,0.2) 25%, rgba(0,0,0,0) 27%, rgba(255,255,255,0.2) 50%, rgba(0,0,0,0) 50%, rgba(0,0,0,0) 75%, rgba(255,255,255,0.2) 75%, rgba(255,255,255,0.2) 100%), rgba(215,234,217,1);
   background: linear-gradient(-45deg, rgba(0,0,0,0) 25%, rgba(255,255,255,0.2) 25%, rgba(255,255,255,0.2) 50%, rgba(0,0,0,0) 50%, rgba(0,0,0,0) 75%, rgba(255,255,255,0.2) 75%), repeating-radial-gradient(rgba(0,0,0,0) 0, rgba(0,0,0,0) 25%, rgba(255,255,255,0.2) 25%, rgba(0,0,0,0) 27%, rgba(255,255,255,0.2) 50%, rgba(0,0,0,0) 50%, rgba(0,0,0,0) 75%, rgba(255,255,255,0.2) 75%, rgba(255,255,255,0.2) 100%), rgba(215,234,217,1);
   background-position: auto auto;
-   -webkit-background-size: 20em 40em;
-    background-size: 20em 25em;
+  -webkit-background-size: 20em 40em;
+  background-size: 20em 25em;
   padding: 40px;
  }
 
