@@ -8,15 +8,15 @@
 			<%= react_component(('SecondInformationBoxes'), {prerender: true}) %>
 		</div>
 	</div>
-	<div class="third-box">
+	<div class="third-box ">
 		<div class="container">
 			<div class="row">
 				<%= react_component(('InventoryHeader'), {prerender: true}) %>
 					<%@inventories.each do |img|%>
 					<div id="mobile-pic" class="col-md-2 "style="width: 16.9rem">
-						<ul>
-							<li class="img-responsive border-image"><%=image_tag(img.photos.first.image(:medium))%></li>
-						</ul>
+							<ul>
+								<li class="img-responsive"><%=image_tag(img.photos.first.image(:medium))%></li>
+							</ul>
 				 </div>
 				<%end%>
 			</div>
