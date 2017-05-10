@@ -1,5 +1,8 @@
 <div class="container inventory-index">
   <h1 class="page-header" id="iventory-title"> Inventory </h1>
+  <% if logged_in? %>
+  <p><%=link_to "Add Inventory", new_inventory_path %></p>
+  <% end %>
    <div class="table-responsive">
     <table class="table table-bordered">
      <thead id= "inventory-header">
