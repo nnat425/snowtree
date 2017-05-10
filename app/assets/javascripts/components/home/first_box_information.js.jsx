@@ -4,11 +4,9 @@ class FirstBoxInformation extends React.Component {
       <div className="container">
   			<div className="row first-box-padding">
   				<div className="col-lg-12">
-  					<h2 className="home-title">
-  					<p className="typewrite" data-period="2000" data-type='[ "About SnowTree... "]'>
-  					<span className="wrap"></span></p></h2>
   				</div>
   				<div className="col-md-6">
+            	<h2 className="about-title">About SnowTree</h2>
   					<p>Snowtree environmental solutions is a consulting, technology,, sales, and distribution company Focused on plastic, paper, and metals. With 30 years of trading and technical sales experience , we can provide the information and services to make it possible to save our customers money while getting the best price for their materials.</p>
   					<ul>
   						<li>jQuery v1.11.1</li>
