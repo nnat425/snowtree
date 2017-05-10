@@ -23,7 +23,7 @@
        <% @inventories.each do |inventory| %>
          <tr id="inventory-information">
             <td> <%= link_to 'Edit',  edit_inventory_path(inventory.id) %></td>
-            <td> <%= link_to 'Destroy',  inventory_path(inventory.id),  method: :delete, data: { confirm: 'Are you sure?' } %></td>
+            <td> <%= link_to 'Delete',  inventory_path(inventory.id),  method: :delete, data: { confirm: 'Are you sure?' } %></td>
            <% if inventory.photos.length > 0 %>
            <td> <%= link_to image_tag(inventory.photos.first.image.url(:thumb)),inventory %></td>
            <% end %>
