@@ -7,50 +7,54 @@ height: 500px;
 }
 
 .font-style-info  {
-  font-family:  ITC Franklin Gothic Std;
+  font-family:'Open Sans', Arial, sans-serif;
   font-size: 14px;
   text-align: center;
+  font-weight: bold;
+  padding: 10px;
 }
 
 .font-style-header {
-  font-size: 23px;
-  font-family:Oswald;
-  font-weight: bold;
+  font-size: 20px;
+  font-family:'Oswald', Arial, sans-serif;
+  font-weight: normal;
 }
 
 .home-title {
   font-size: 40px;
   color: #003366;
-  font-family:"Abel", Monaco, monospace;
+  font-family:'Oswald', Arial, sans-serif;
   margin-bottom: 25px;
   border-bottom-style: solid;
   border-color: black;
   text-align: center;
 }
 
-.glyphicon.glyphicon-globe {
+.glyphicon.glyphicon-phone {
     font-size: 50px;
     color: green;
+opacity: .7;
 }
 
-.glyphicon.glyphicon-bookmark {
+.glyphicon.glyphicon-dashboard {
     font-size: 50px;
     color: green;
+    opacity: .7;
 }
 
-.glyphicon.glyphicon-shopping-cart {
+.glyphicon.glyphicon-search {
     font-size: 50px;
     color: green;
+opacity: .7;
+
 }
 
 .info-text {
   text-align: center;
-  margin: 10%;
-}
-
-.margin-info {
+  margin: 6%;
 
 }
+
 .information-boxes {
   margin-top: 50px;
   margin-bottom: 60px;
@@ -76,7 +80,7 @@ height: 500px;
  }
 
 .third-box {
-  background-color:#E6FFEE  ;
+  background-color:#F1F2F1    ;
   padding-bottom: 160px;
   padding-top: 50px;
 }
