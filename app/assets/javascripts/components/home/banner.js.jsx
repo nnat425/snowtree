@@ -17,7 +17,7 @@ class BannerPictures extends React.Component {
       			<div className="carousel-caption"></div>
       		</div>
       		<div className="item image1">
-      			<img src="/plastic.jpg" width="2000"/>
+      			<img src="/water.jpg" width="2000"/>
       			<div className="carousel-caption"></div>
       		</div>
       	</div>
