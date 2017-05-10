@@ -12,7 +12,7 @@
 		<div class="row">
 			<%= react_component(('InventoryHeader'), {prerender: true}) %>
 				<%@inventories.each do |img|%>
-				<div id="mobile-pic" class="col-md-4 image-padding "style="width: 30.1rem">
+				<div id="mobile-pic" class="col-md-4 image-padding "style="width: 34rem">
 						<ul>
 							<li class="img-responsive"><%=image_tag(img.photos.first.image(:medium))%></li>
 						</ul>
