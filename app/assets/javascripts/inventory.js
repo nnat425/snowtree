@@ -1,7 +1,7 @@
 $(document).ready(function(){
   $('#add-image-div').on('click','#add-image',function(e){
     e.preventDefault();
-    $(this).after("<div id='parent-photo'><button  class='remove-file-option'>X</button><input type='file' name='photos[]' id='photos_' multiple='multiple'><div id='target'></div</div><br>");
+    $(this).after("<div id='parent-photo' style='margin-top:2em'><button  style='display:inline-block' class='remove-file-option'>X</button><input style='display:inline-block;width:12.2em;' type='file' name='photos[]' id='photos_' multiple='multiple'><div style='display:inline-block' id='target'></div</div><br>");
 
 
       $('.remove-file-option').on('click',function(e){
