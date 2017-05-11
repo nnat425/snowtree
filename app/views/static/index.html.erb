@@ -6,11 +6,12 @@
 		<div class="container">
 			<%= react_component(('SecondInformationBoxes'), {prerender: true}) %>
 		</div>
+	</div>
 	<div class="third-box ">
 		<div class="row">
 			<%= react_component(('InventoryHeader'), {prerender: true}) %>
 				<%@inventories.each do |img|%>
-				<div id="mobile-pic" class="col-md-4 image-padding "style="width: 34rem">
+				<div id="mobile-pic" class="col-md-2 "style="width: 32.5rem">
 						<ul>
 							<li class="img-responsive"><%=image_tag(img.photos.first.image(:medium))%></li>
 						</ul>
