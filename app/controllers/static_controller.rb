@@ -22,5 +22,5 @@ class StaticController < ApplicationController
 
 	def thanks_for_email
 	end
-	
+
 end
