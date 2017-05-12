@@ -1,7 +1,7 @@
 .consulting-header {
     margin-top: 50px;
     height: 450px;
-    background: url('/plastic.jpg') center center no-repeat scroll;
+    background: url('/consulting.jpg') center center no-repeat scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -10,5 +10,17 @@
 }
 
 .banner-text {
-  margin-top: 140px;
+  margin-top: 100px;
+}
+
+.header-text-size {
+  font-size: 50px;
+}
+
+.cta-skin {
+  background-color: #209b60;
+  padding: 40px 0;
+}
+.cta-skin h3, .cta-skin p {
+  color: #fff;
 }
