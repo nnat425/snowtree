@@ -8,6 +8,7 @@ class FirstDiv extends React.Component {
                 <h1 className="tagline header-text-size">Consulting</h1>
                 <p>ntroduce the visitor to the business using clear, informative text. </p>
                 <p>Use well-targeted keywords within your sentences to make sure search engines can find the business.</p>
+                <a className="btn btn-success btn-md" href="/contacts/new">Contact Us</a>
               </div>
             </div>
           </div>
