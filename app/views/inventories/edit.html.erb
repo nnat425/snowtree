@@ -1,7 +1,9 @@
-<div style='margin-top:5em'>
+<div class = "container">
+  <div id="signupbox" class="mainbox col-md-6 co-md-offset-3 col-sm-8 col-sm-offset-3">
+   <div id="inventory-new-form" >
+      <h1 class="page-header products-title"> Update Inventory </h1>
+    <div class="form-horizontal ">
 	<%= form_for @inventory, :value => @inventory, html: {multipart: true} do |f| %>
-
-
 
 	<% @photos.each do |photo| %>
 	 <%= image_tag(photo.image.url(:thumb)) %>
@@ -43,6 +45,9 @@
 
 	<div class="actions">
 		<%= f.submit %>
-	</div>>
+	</div>
 	<% end %>
+</div>
+</div>
+</div>
 </div>
