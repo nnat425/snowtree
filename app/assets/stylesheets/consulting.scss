@@ -39,17 +39,16 @@
 
 .custom-icon {
   font-size:45px;
-  background:#666;
-  background:rgba(0,0,0,0.4);
+  background:white;
   padding:30px;
   -webkit-border-radius:1100%;
   -moz-border-radius:100%;
   -o-border-radius:100%;
   border-radius:100%;
   border:6px solid #fff;
-  color:#fff;
+  color:green;
 	box-shadow: 0 1px 10px rgba(0, 0, 0, 0.46);
-  text-align:center;
+  // text-align:center;
   display:table-cell;
   vertical-align:middle;
   width:160px;
@@ -58,9 +57,11 @@
   -webkit-transition:.5s;
   -o-transition:.5s;
   transition:.5s;
+  border-color: green;
+  border-width: thin;
 }
 .custom-icon:hover {
-  background:rgba(0,0,0,0.6);
+  background:lightgreen;
 }
 .fix-editor {
   // display:none;
