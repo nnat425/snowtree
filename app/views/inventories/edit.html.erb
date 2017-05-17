@@ -4,13 +4,20 @@
       <h1 class="page-header products-title"> Update Inventory </h1>
     <div class="form-horizontal ">
 				<%= form_for @inventory, :value => @inventory, html: {multipart: true} do |f| %>
-		
-						<% @photos.each do |photo| %>
-							 <%= image_tag(photo.image.url(:thumb)) %>
-							<%= fields_for "photos[]", photo  do |pf| %>
-							<%= f.file_field(:image)  %>
-								<% end %>
-							<% end %>
+
+									<div id="div_id_username" class="form-group required">
+										<label  class="control-label col-md-3  requiredField"><%= f.label "Photo:" %></label>
+											<% @photos.each do |photo| %>
+							 				<%= image_tag(photo.image.url(:thumb)) %>
+											<div class="center-image">
+												<%= fields_for "photos[]", photo  do |pf| %>
+												<%= pf.file_field(:image)  %>
+												<% end %>
+												<% end %>
+											</div>
+
+
+											</div>
 
 					<div id="div_id_username" class="form-group required">
 						<label  class="control-label col-md-3  requiredField"><%= f.label "type:" %></label>
