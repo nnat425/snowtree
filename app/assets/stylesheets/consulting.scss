@@ -1,0 +1,100 @@
+.consulting-header {
+    margin-top: 50px;
+    height: 450px;
+    background: url('/consulting.jpg') center center no-repeat scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    color: white;
+}
+
+.banner-text {
+  margin-top: 100px;
+}
+
+.header-text-size {
+  font-size: 50px;
+}
+
+.cta-skin {
+  background-color: #209b60;
+  padding: 40px 0;
+}
+.cta-skin h3, .cta-skin p {
+  color: #fff;
+}
+
+
+.fourth-div {
+  height: 440px;
+  background: url('/consult.jpg') center center no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  color: white;
+  opacity:.8;
+
+}
+
+.custom-icon {
+  font-size:45px;
+  background:white;
+  padding:30px;
+  -webkit-border-radius:1100%;
+  -moz-border-radius:100%;
+  -o-border-radius:100%;
+  border-radius:100%;
+  border:6px solid #fff;
+  color:green;
+	box-shadow: 0 1px 10px rgba(0, 0, 0, 0.46);
+  // text-align:center;
+  display:table-cell;
+  vertical-align:middle;
+  width:160px;
+  height:160px;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  -o-transition:.5s;
+  transition:.5s;
+  border-color: green;
+  border-width: thin;
+  margin-bottom: 40px;
+}
+.custom-icon:hover {
+  background:#DFFFDF  ;
+}
+
+.third-div {
+  margin-top: 50px;
+  margin-bottom: 60px;
+  padding: 40px;
+}
+
+.infor-consol {
+  font-size: 20px;
+}
+
+.info-consol-sub {
+  margin-top: 90px;
+  text-align: center;
+}
+
+.sub-divider-header {
+  font-size: 27px;
+  font-weight: bold;
+}
+
+.header-third {
+  font-size: 40px;
+  font-weight: bold;
+  font-family: 'Baloo Bhaina';
+}
+
+hr.style12 {
+	height: 10px;
+	background: url(http://ibrahimjabbari.com/english/images/hr-12.png) repeat-x 0 0;
+  border: 0;
+  width: 254px;
+}
