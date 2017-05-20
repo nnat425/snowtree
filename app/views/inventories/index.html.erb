@@ -1,7 +1,23 @@
 <div class="container inventory-index">
   <h1 class="page-header" id="iventory-title"> Inventory </h1>
   <% if logged_in? %>
-  <p><%=link_to "Add Inventory", new_inventory_path %></p>
+  <!-- <p><%=link_to "Add Inventory", new_inventory_path %></p> -->
+  <div class="container">
+	  <div class="row">
+    <button type="button" id="button-space" class="btn btn-primary btn-md" data-toggle="modal" data-target="#myModal">
+      Add Inventory
+    </button>
+  <div class="modal fade" id="myModal"  role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="">
+      <div class="">
+        <div class="modal-body">
+          <%= render partial: "inventories/new_form" %>
+        </div>
+      </div>
+    </div>
+  </div>
+ </div>
+</div>
   <% end %>
    <div class="table-responsive">
     <table class="table table-bordered">
