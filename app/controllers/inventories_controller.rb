@@ -3,7 +3,7 @@ class InventoriesController < ApplicationController
 
   def index
     @inventory = Inventory.new
-    @inventories = Inventory.paginate(page: params[:page], per_page: 15)
+     @inventories = Inventory.paginate(page: params[:page], per_page: 15)
   end
 
   def new

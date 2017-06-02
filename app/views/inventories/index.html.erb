@@ -1,7 +1,6 @@
 <div class="container inventory-index">
   <h1 class="page-header" id="iventory-title"> Inventory </h1>
   <% if logged_in? %>
-  <!-- <p><%=link_to "Add Inventory", new_inventory_path %></p> -->
   <div class="container">
 	  <div class="row">
     <button type="button" id="button-space" class="btn btn-primary btn-md" data-toggle="modal" data-target="#myModal">
@@ -41,10 +40,40 @@
             <td> <%= link_to 'Edit',  edit_inventory_path(inventory.id) %></td>
             <td> <%= link_to 'Delete',  inventory_path(inventory.id),  method: :delete, data: { confirm: 'Are you sure?' } %></td>
            <% if inventory.photos.length > 0 %>
-           <td> <%= link_to image_tag(inventory.photos.first.image.url(:thumb)),inventory %></td>
+           <td> <%= image_tag(inventory.photos.first.image.url(:thumb)) %></td>
            <% end %>
-           <td><%= inventory.content %></td>
-           <td><%= inventory.material_name %></td>
+           <td><%= inventory.content%></td>
+
+           <td><a data-toggle="modal" data-target="#myModal2"><%= inventory.material_name %></a></td>
+           <div class="">
+             <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+               <div class="modal-dialog" role="document">
+                 <div class="modal-content">
+                   <div class="modal-header">
+                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                   </div>
+                   <div class="modal-body">
+                     <div class="container" id="tourpackages-carousel">
+                       <div class="row">
+                         <div class="col-md-18 col-md-6">
+                           <div class="thumbnail">
+                            <%= image_tag(inventory.photos.first.image.url) %>
+                               <div class="caption">
+                                 <h4><%= inventory.material_name %></h4>
+                                 <p><%= inventory.content%></p>
+                                  <p><%= inventory.content%></p>
+                                  <p><%= inventory.content%></p>
+                                  <p><%= inventory.content%></p>
+                             </div>
+                           </div>
+                         </div>
+                       </div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+             </div>
+           </div>
            <td><%= inventory.grade_number %></td>
            <td><%= inventory.form %></td>
            <td><%= inventory.color %></td>
