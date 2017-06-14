@@ -1,0 +1,20 @@
+<div class="container show-page">
+  <div class="row">
+    <div class="col-md-9">
+      <div class="thumbnail">
+        <h1><%= @inventory.content%></h1>
+          <img class="img-responsive"><%=image_tag(@inventory.photos.first.image.url(:large))%>
+          <div class="cap">
+            <div class="well">
+
+            </div>
+          </div>
+          <div class="caption-full">
+          </div>
+          <div class="well">
+
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
