@@ -5,8 +5,27 @@
         <h1 id="show-page-title"><%= @inventory.content%></h1>
           <img class="img-responsive"><%=image_tag(@inventory.photos.first.image.url(:large))%>
           <div class="cap">
-            <div class="well">
+            <div class="container">
+              <div class="col-sm-8">
+              <div class="carousel slide" data-ride="carousel" data-type="multi" data-interval="3000" id="myCarousel">
+                <div class="carousel-inner">
+                  <div class="item active">
+                    <div class="col-md-2 col-sm-6 col-xs-12"><a href="#"><img src="http://placehold.it/500/e499e4/fff&text=1" class="img-responsive"></a></div>
+                  </div>
+                  <div class="item">
+                    <div class="col-md-2 col-sm-6 col-xs-12"><a href="#"><img src="http://placehold.it/500/e477e4/fff&text=2" class="img-responsive"></a></div>
+                  </div>
+                  </div>
+                </div>
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
+                <a class="right carousel-control" href="#myCarousel" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
+              </div>
+            </div>
 
+            </div>
+            <div class="cap">
+              <div class="well">
+              </div>
             </div>
           </div>
       </div>
