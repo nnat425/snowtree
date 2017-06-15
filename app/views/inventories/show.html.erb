@@ -1,0 +1,70 @@
+<div class="container show-page">
+  <div class="row">
+    <div class="col-md-9">
+      <div class="thumbnail">
+        <h1 id="show-page-title"><%= @inventory.content%></h1>
+          <img class="img-responsive"><%=image_tag(@inventory.photos.first.image.url(:large))%>
+          <div class="cap">
+            <div class="container">
+              <div class="col-sm-8">
+              <div class="carousel slide" data-ride="carousel" data-type="multi" data-interval="3000" id="myCarousel">
+                <div class="carousel-inner">
+                  <div class="item active">
+                    <% @photos.each do |photo| %>
+                    <div class="col-md-2 col-sm-6 col-xs-12"><%= image_tag(photo.image.url(:thumb)) %></div>
+                    <%end%>
+                  </div>
+                  </div>
+                </div>
+                <% if @photos.length > 5 %>
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
+                <a class="right carousel-control" href="#myCarousel" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
+                  <%end%>
+              </div>
+            </div>
+          </div>
+          <div class="cap">
+            <div class="well">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-8">
+                    <div class="table-responsive">
+                    <table class="table table-bordered">
+                      <tbody>
+                      <tr>
+                        <td>Type</td>
+                        <td><%= @inventory.content%></td>
+                      </tr>
+                      <tr>
+                        <td>Material Name</td>
+                        <td><%= @inventory.material_name%></td>
+                      </tr>
+                      <tr>
+                        <td>Grade Number</td>
+                        <td><%= @inventory.grade_number%></td>
+                      </tr>
+                      <tr>
+                        <td>Form</td>
+                        <td><%= @inventory.form%></td>
+                      </tr>
+                      <tr>
+                        <td>Color</td>
+                        <td><%= @inventory.color%></td>
+                      </tr>
+                      <tr>
+                        <td>Quantity</td>
+                        <td><%= @inventory.quantity%></td>
+                      </tr>
+                      </tbody>
+                    </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

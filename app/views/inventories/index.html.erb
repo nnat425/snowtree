@@ -1,31 +1,31 @@
 <div class="container inventory-index">
   <h1 class="page-header" id="iventory-title"> Inventory </h1>
   <% if logged_in? %>
-  <!-- <p><%=link_to "Add Inventory", new_inventory_path %></p> -->
-  <div class="container">
-	  <div class="row">
-    <button type="button" id="button-space" class="btn btn-primary btn-md" data-toggle="modal" data-target="#myModal">
-      Add Inventory
-    </button>
-  <div class="modal fade" id="myModal"  role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="">
+    <div class="container">
+  	  <div class="row">
+      <button type="button" id="button-space" class="btn btn-primary btn-md" data-toggle="modal" data-target="#myModal">
+        Add Inventory
+      </button>
+    <div class="modal fade" id="myModal"  role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
       <div class="">
-        <div class="modal-body">
-          <%= render partial: "inventories/new_form" %>
+        <div class="">
+          <div class="modal-body">
+            <%= render partial: "inventories/new_form" %>
+          </div>
         </div>
       </div>
     </div>
+   </div>
   </div>
- </div>
-</div>
   <% end %>
    <div class="table-responsive">
     <table class="table table-bordered">
      <thead id= "inventory-header">
-       <% if logged_in? %>
        <tr>
+      <% if logged_in? %>
          <th>Edit</th>
          <th>Delete</th>
+      <% end %>
          <th>Image</th>
          <th>Type</th>
          <th>Material Name</th>
@@ -38,12 +38,14 @@
      <tbody>
        <% @inventories.each do |inventory| %>
          <tr id="inventory-information">
+        <% if logged_in? %>
             <td> <%= link_to 'Edit',  edit_inventory_path(inventory.id) %></td>
             <td> <%= link_to 'Delete',  inventory_path(inventory.id),  method: :delete, data: { confirm: 'Are you sure?' } %></td>
+          <% end %>
            <% if inventory.photos.length > 0 %>
-           <td> <%= link_to image_tag(inventory.photos.first.image.url(:thumb)),inventory %></td>
+           <td> <%= image_tag(inventory.photos.first.image.url(:thumb)) %></td>
            <% end %>
-           <td><%= inventory.content %></td>
+           <td><%= link_to inventory.content, inventory%></td>
            <td><%= inventory.material_name %></td>
            <td><%= inventory.grade_number %></td>
            <td><%= inventory.form %></td>
@@ -51,34 +53,6 @@
            <td><%= inventory.quantity %></td>
          </tr>
        </tbody>
-       <%end%>
-      <%else %>
-      <thead id= "inventory-header">
-        <tr>
-          <th>Image</th>
-          <th>Type</th>
-          <th>Material Name</th>
-          <th>Grade Number</th>
-          <th>Form</th>
-          <th>Color</th>
-          <th>Quantity</th>
-        </tr>
-      </thead>
-      <tbody>
-        <% @inventories.each do |inventory| %>
-          <tr id="inventory-information">
-            <% if inventory.photos.length > 0 %>
-            <td> <%= link_to image_tag(inventory.photos.first.image.url(:thumb)),inventory %></td>
-            <% end %>
-            <td><%= inventory.content %></td>
-            <td><%= inventory.material_name %></td>
-            <td><%= inventory.grade_number %></td>
-            <td><%= inventory.form %></td>
-            <td><%= inventory.color %></td>
-            <td><%= inventory.quantity %></td>
-          </tr>
-        </tbody>
-       <%end%>
        <%end%>
    </table>
    <div class="pagination">
