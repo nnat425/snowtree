@@ -12,6 +12,7 @@ class InventoriesController < ApplicationController
 
   def show
     @inventory = Inventory.find(params[:id])
+        @photos = @inventory.photos
   end
 
   def create
